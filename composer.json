@@ -40,9 +40,10 @@
         "sebastianbergmann/phpcov": "1.1.0",
         "satooshi/php-coveralls": "dev-master",
         "symfony/config": "2.4.*",
+        "symfony/event-dispatcher": "2.4.*",
         "symfony/stopwatch": "2.4.*",
         "symfony/yaml": "2.4.*",
-        "guzzle/guzzle": "2.8.*"
+        "guzzle/guzzle": "3.8.*"
     },
     "autoload": {
         "psr-0": {
