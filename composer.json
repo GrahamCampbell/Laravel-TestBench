@@ -1,0 +1,54 @@
+{
+    "name": "graham-campbell/testbench",
+    "description": "TestBench Provides Some Testing Functionality For Laravel 4.1",
+    "keywords": ["laravel", "framework", "test", "bench", "testbench", "TestBench", "Laravel TestBench", "Laravel-TestBench", "Graham Campbell", "GrahamCampbell"],
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Graham Campbell",
+            "email": "graham@mineuk.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "sebastianbergmann/phpcov",
+                "version": "1.1.0",
+                "dist": {
+                    "url": "https://github.com/sebastianbergmann/phpcov/archive/1.1.0.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/sebastianbergmann/phpcov.git",
+                    "type": "git",
+                    "reference": "1.1.0"
+                },
+                "bin": [
+                    "phpcov.php"
+                ]
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.4.7",
+        "laravel/framework": "4.1.*",
+        "orchestra/testbench": "2.1.*",
+        "mockery/mockery": "0.8.*",
+        "phpunit/phpunit": "3.7.*",
+        "sebastian/finder-facade": "1.1.*",
+        "sebastianbergmann/phpcov": "1.1.0",
+        "satooshi/php-coveralls": "dev-master",
+        "symfony/config": "2.4.*",
+        "symfony/stopwatch": "2.4.*",
+        "symfony/yaml": "2.4.*",
+        "guzzle/guzzle": "2.8.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "GrahamCampbell\\TestBench\\Tests": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
