@@ -24,11 +24,12 @@ use Orchestra\Testbench\TestCase;
 
 abstract class TestBench extends TestCase
 {
-    protected $basepath; // must be set in the extending class
+
+    abstract protected function getBasePath();
 
     protected function getEnvironmentSetUp($app)
     {
-        $app['path.base'] = realpath($this->basepath);
+        $app['path.base'] = realpath($this->getBasePath);
 
         $app['config']->set('database.default', 'sqlite');
         $app['config']->set('database.connections.sqlite', array(

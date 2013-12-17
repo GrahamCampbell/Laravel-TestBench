@@ -47,7 +47,8 @@
     },
     "autoload": {
         "psr-0": {
-            "GrahamCampbell\\TestBench\\Tests": "tests/"
+            "GrahamCampbell\\TestBench": "src/",
+            "GrahamCampbell\\Tests\\TestBench": "tests/"
         }
     },
     "minimum-stability": "dev",
