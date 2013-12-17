@@ -24,7 +24,7 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 ## System Requirements
 
-* PHP 5.4.7+ or PHP 5.5+ is required.
+* PHP 5.4.7+ or PHP 5.5+ is required.  
 * You will need [Laravel 4.1](http://laravel.com) because this package is designed for it.  
 * You will need [Composer](https://getcomposer.org) installed to load the dependencies of Laravel TestBench.  
 
@@ -33,11 +33,11 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 Please check the system requirements before installing Laravel TestBench.  
 
-To get the latest version of Laravel TestBench, simply require it in your `composer.json` file.
+To get the latest version of Laravel TestBench, simply require it in your `composer.json` file.  
 
-`"graham-campbell/testbench": "dev-master"`
+`"graham-campbell/testbench": "dev-master"`  
 
-For the time being, you will also need to add this to your `composer.json` too.
+For the time being, you will also need to add this to your `composer.json` too.  
 
 ```
 "repositories": [
@@ -63,9 +63,17 @@ For the time being, you will also need to add this to your `composer.json` too.
 ],
 ```
 
-You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
+You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.  
 
-Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The TestBench class would be a good place to start. There are no service providers to register.
+Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The TestBench class would be a good place to start. There are no service providers to register.  
+
+
+## Usage
+
+There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-TestBench
+) for Laravel TestBench.  
+
+You may see an example of implementation in pretty much all of my [Laravel 4.1](http://laravel.com) packages.  
 
 
 ## Updating Your Fork
