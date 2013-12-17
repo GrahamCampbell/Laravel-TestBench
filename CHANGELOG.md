@@ -8,7 +8,7 @@ CHANGE LOG
 * Added some testing tools and helpers
 
 
-## V0.1.1 Alpha (Upcoming)
+## V0.1.1 Alpha (17/12/2013)
 #### Major Release
 
 * Minor tweaks
