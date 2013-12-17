@@ -37,9 +37,35 @@ To get the latest version of Laravel TestBench, simply require it in your `compo
 
 `"graham-campbell/testbench": "dev-master"`
 
+For the time being, you will also need to add this to your `composer.json` too.
+
+```
+"repositories": [
+    {
+        "type": "package",
+        "package": {
+            "name": "sebastianbergmann/phpcov",
+            "version": "1.1.0",
+            "dist": {
+                "url": "https://github.com/sebastianbergmann/phpcov/archive/1.1.0.zip",
+                "type": "zip"
+            },
+            "source": {
+                "url": "https://github.com/sebastianbergmann/phpcov.git",
+                "type": "git",
+                "reference": "1.1.0"
+            },
+            "bin": [
+                "phpcov.php"
+            ]
+        }
+    }
+],
+```
+
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
-Once Laravel TestBench is installed, you can extend or implement the classes in this package, or required by this package to write your tests. There are no service providers to register.
+Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The TestBench class would be a good place to start. There are no service providers to register.
 
 
 ## Updating Your Fork
