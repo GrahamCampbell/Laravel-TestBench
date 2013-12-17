@@ -51,6 +51,11 @@
             "GrahamCampbell\\Tests\\TestBench": "tests/"
         }
     },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.2-dev"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
