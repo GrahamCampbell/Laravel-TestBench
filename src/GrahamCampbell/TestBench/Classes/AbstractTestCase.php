@@ -1,4 +1,4 @@
-<?php namespace GrahamCampbell\TestBench\Classes;
+<?php
 
 /**
  * This file is part of Laravel TestBench by Graham Campbell.
@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+namespace GrahamCampbell\TestBench\Classes;
 
 use Orchestra\Testbench\TestCase;
 
