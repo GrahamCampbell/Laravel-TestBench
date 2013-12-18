@@ -12,12 +12,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
- * @package    Laravel-TestBench
- * @author     Graham Campbell
- * @license    Apache License
- * @copyright  Copyright 2013 Graham Campbell
- * @link       https://github.com/GrahamCampbell/Laravel-TestBench
  */
 
 use Orchestra\Testbench\TestCase;
@@ -25,11 +19,11 @@ use Orchestra\Testbench\TestCase;
 /**
  * This is the abstract test case class.
  *
- * @package    Laravel-Core
+ * @package    Laravel-TestBench
  * @author     Graham Campbell
  * @license    Apache License
  * @copyright  Copyright 2013 Graham Campbell
- * @link       https://github.com/GrahamCampbell/Laravel-Core
+ * @link       https://github.com/GrahamCampbell/Laravel-TestBench
  */
 abstract class AbstractTestCase extends TestCase
 {
