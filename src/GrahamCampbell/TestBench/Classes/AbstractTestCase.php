@@ -21,8 +21,8 @@ use Orchestra\Testbench\TestCase;
  *
  * @package    Laravel-TestBench
  * @author     Graham Campbell
- * @license    Apache License
  * @copyright  Copyright 2013 Graham Campbell
+ * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/develop/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-TestBench
  */
 abstract class AbstractTestCase extends TestCase
