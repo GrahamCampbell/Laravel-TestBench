@@ -65,7 +65,7 @@ For the time being, you will also need to add this to your `composer.json` too.
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.  
 
-Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The TestBench class would be a good place to start. There are no service providers to register.  
+Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.  
 
 
 ## Usage
@@ -102,7 +102,7 @@ Please submit pull requests against the develop branch.
 * Any pull requests made against the master branch will be closed immediately.  
 * If you plan to fix a bug, please create a branch called `fix-`, followed by an appropriate name.  
 * If you plan to add a feature, please create a branch called `feature-`, followed by an appropriate name.  
-* Please follow PSR-2 standards except namespace declarations should be on the same line as `<?php`.  
+* Please follow the [PSR-2 Coding Style](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and [PHP-FIG Naming Conventions](https://github.com/php-fig/fig-standards/blob/master/bylaws/002-psr-naming-conventions.md).  
 
 
 ## License

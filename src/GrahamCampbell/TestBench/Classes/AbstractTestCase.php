@@ -22,11 +22,30 @@
 
 use Orchestra\Testbench\TestCase;
 
-abstract class TestBench extends TestCase
+/**
+ * This is the abstract test case class.
+ *
+ * @package    Laravel-Core
+ * @author     Graham Campbell
+ * @license    Apache License
+ * @copyright  Copyright 2013 Graham Campbell
+ * @link       https://github.com/GrahamCampbell/Laravel-Core
+ */
+abstract class AbstractTestCase extends TestCase
 {
-
+    /**
+     * Get the application base path.
+     *
+     * @return string
+     */
     abstract protected function getBasePath();
 
+    /**
+     * Setup the application environment.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return void
+     */
     protected function getEnvironmentSetUp($app)
     {
         $app['path.base'] = realpath($this->getBasePath);
