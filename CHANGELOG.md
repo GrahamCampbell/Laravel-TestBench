@@ -6,6 +6,7 @@ CHANGE LOG
 #### Major Release
 
 * Added some testing tools and helpers
+* Coding style fixes
 
 
 ## V0.1.1 Alpha (17/12/2013)
