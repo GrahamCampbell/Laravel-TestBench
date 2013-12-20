@@ -44,7 +44,7 @@ abstract class AbstractTestCase extends TestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['path.base'] = realpath($this->getBasePath);
+        $app['path.base'] = realpath($this->getBasePath());
 
         $app['config']->set('database.default', 'sqlite');
         $app['config']->set('database.connections.sqlite', array(
