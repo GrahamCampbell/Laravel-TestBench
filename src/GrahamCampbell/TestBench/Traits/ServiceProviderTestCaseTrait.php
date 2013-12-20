@@ -64,8 +64,12 @@ trait ServiceProviderTestCaseTrait
     public function testDeferred()
     {
         $reflection = new ReflectionClass($this->getServiceProviderClass());
+        $method = $reflection->getMethod("isDeferred");
+        $method->setAccessible(true);
 
-        $this->assertEquals($this->getServiceProviderDeferred(), $reflection->getProperty('defer'));
+        $serviceprovider = $this->getServiceProviderClass();
+
+        $this->assertEquals($this->getServiceProviderDeferred(), $method->invoke(new $serviceprovider($this->app)));
     }
 
     public function testProvides()
@@ -76,6 +80,6 @@ trait ServiceProviderTestCaseTrait
 
         $serviceprovider = $this->getServiceProviderClass();
 
-        $this->assertTrue(is_array($method->invoke(new $serviceprovider())));
+        $this->assertTrue(is_array($method->invoke(new $serviceprovider($this->app))));
     }
 }

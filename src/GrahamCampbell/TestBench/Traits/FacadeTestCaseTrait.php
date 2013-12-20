@@ -102,7 +102,7 @@ trait FacadeTestCaseTrait
 
             $serviceprovider = $this->getServiceProviderClass();
 
-            $this->assertTrue(in_array($this->getFacadeAccessor(), $method->invoke(new $serviceprovider())));
+            $this->assertTrue(in_array($this->getFacadeAccessor(), $method->invoke(new $serviceprovider($this->app))));
         }
     }
 }
