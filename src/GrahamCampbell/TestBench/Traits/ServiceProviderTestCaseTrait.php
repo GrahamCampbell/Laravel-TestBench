@@ -48,9 +48,9 @@ trait ServiceProviderTestCaseTrait
 
     public function testIsAClass()
     {
-        $serviceprovider = new $this->getServiceProviderClass();
+        $serviceprovider = $this->getServiceProviderClass();
 
-        $this->assertTrue(is_object($serviceprovider));
+        $this->assertTrue(is_object(new $serviceprovider));
     }
 
     public function testIsAServiceProvider()
