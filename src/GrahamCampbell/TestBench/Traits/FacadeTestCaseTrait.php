@@ -53,7 +53,7 @@ trait FacadeTestCaseTrait
     /**
      * Get the facade instance.
      *
-     * @return string
+     * @return \Illuminate\Support\Facades\Facade
      */
     protected function getFacade()
     {
@@ -63,7 +63,7 @@ trait FacadeTestCaseTrait
     /**
      * Get the facade reflection class.
      *
-     * @return string
+     * @return \ReflectionClass
      */
     protected function getReflection()
     {
