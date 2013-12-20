@@ -67,7 +67,7 @@ trait FacadeTestCaseTrait
      */
     protected function getReflection()
     {
-        return new new ReflectionClass($this->getFacadeClass());
+        return new ReflectionClass($this->getFacadeClass());
     }
 
     public function testIsAFacade()
