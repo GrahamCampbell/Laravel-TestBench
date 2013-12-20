@@ -53,4 +53,48 @@ abstract class AbstractTestCase extends TestCase
             'prefix'   => ''
         ));
     }
+
+    /**
+     * Setup the test case.
+     *
+     * @return void
+     */
+    public function setUp()
+    {
+        parent::setUp();
+
+        $this->start();
+    }
+
+    /**
+     * Run extra setup code.
+     *
+     * @return void
+     */
+    protected function start()
+    {
+        // define more setup methods
+    }
+
+    /**
+     * Tear down the test case.
+     *
+     * @return void
+     */
+    public function tearDown()
+    {
+        parent::tearDown();
+
+        $this->finish();
+    }
+
+    /**
+     * Run extra tear down code.
+     *
+     * @return void
+     */
+    protected function finish()
+    {
+        // define more tear down methods
+    }
 }
