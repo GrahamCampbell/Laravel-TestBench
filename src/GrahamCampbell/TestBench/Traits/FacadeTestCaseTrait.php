@@ -51,25 +51,34 @@ trait FacadeTestCaseTrait
     abstract protected function getFacadeRoot();
 
     /**
-     * Get the facade reflection class.
+     * Get the service provider class.
      *
-     * @return \ReflectionClass
+     * @return string
      */
-    protected function getReflection()
+    protected function getServiceProviderClass()
     {
-        return new ReflectionClass($this->getFacadeClass());
+        return null;
+    }
+
+    public function testIsAClass()
+    {
+        $facade = new $this->getFacadeClass();
+
+        $this->assertTrue(is_object($facade));
     }
 
     public function testIsAFacade()
     {
+        $reflection = new ReflectionClass($this->getFacadeClass());
         $facade = new ReflectionClass('Illuminate\Support\Facades\Facade');
 
-        $this->assertTrue($this->getReflection()->isSubclassOf($facade));
+        $this->assertTrue($reflection->isSubclassOf($facade));
     }
 
     public function testFacadeAccessor()
     {
-        $method = $this->getReflection()->getMethod("getFacadeAccessor");
+        $reflection = new ReflectionClass($this->getFacadeClass());
+        $method = $reflection->getMethod("getFacadeAccessor");
         $method->setAccessible(true);
 
         $this->assertEquals($this->getFacadeAccessor(), $method->invoke(null));
@@ -77,9 +86,21 @@ trait FacadeTestCaseTrait
 
     public function testFacadeRoot()
     {
-        $method = $this->getReflection()->getMethod("getFacadeRoot");
+        $reflection = new ReflectionClass($this->getFacadeClass());
+        $method = $reflection->getMethod("getFacadeRoot");
         $method->setAccessible(true);
 
         $this->assertInstanceOf($this->getFacadeRoot(), $method->invoke(null));
+    }
+
+    public function testServiceProvider()
+    {
+        if ($this->getServiceProviderClass()) {
+            $reflection = new ReflectionClass($this->getServiceProviderClass());
+            $method = $reflection->getMethod("provides");
+            $method->setAccessible(true);
+
+            $this->assertTrue(in_array($this->getFacadeAccessor(), $method->invoke($this->getServiceProviderClass())));
+        }
     }
 }
