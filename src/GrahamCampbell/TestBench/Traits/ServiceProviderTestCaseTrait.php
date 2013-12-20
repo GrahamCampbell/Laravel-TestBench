@@ -65,7 +65,7 @@ trait ServiceProviderTestCaseTrait
     {
         $reflection = new ReflectionClass($this->getServiceProviderClass());
 
-        $this->assertEquals($this->getServiceProviderDeferred, $reflection->getProperty("defer"));
+        $this->assertEquals($this->getServiceProviderDeferred(), $reflection->getProperty('defer'));
     }
 
     public function testProvides()
