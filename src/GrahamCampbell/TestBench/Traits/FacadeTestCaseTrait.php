@@ -51,16 +51,6 @@ trait FacadeTestCaseTrait
     abstract protected function getFacadeRoot();
 
     /**
-     * Get the facade instance.
-     *
-     * @return \Illuminate\Support\Facades\Facade
-     */
-    protected function getFacade()
-    {
-        return new $this->getFacadeClass();
-    }
-
-    /**
      * Get the facade reflection class.
      *
      * @return \ReflectionClass
@@ -72,7 +62,9 @@ trait FacadeTestCaseTrait
 
     public function testIsAFacade()
     {
-        $this->assertInstanceOf('Illuminate\Support\Facades\Facade', $this->getFacade());
+        $facade = new ReflectionClass('Illuminate\Support\Facades\Facade');
+
+        $this->assertTrue($this->getReflection()->isSubclassOf($facade));
     }
 
     public function testFacadeAccessor()
