@@ -50,7 +50,7 @@ trait ServiceProviderTestCaseTrait
     {
         $serviceprovider = $this->getServiceProviderClass();
 
-        $this->assertTrue(is_object(new $serviceprovider));
+        $this->assertTrue(is_object(new $serviceprovider()));
     }
 
     public function testIsAServiceProvider()

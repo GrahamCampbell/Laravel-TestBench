@@ -64,7 +64,7 @@ trait FacadeTestCaseTrait
     {
         $facade = $this->getFacadeClass();
 
-        $this->assertTrue(is_object(new $facade));
+        $this->assertTrue(is_object(new $facade()));
     }
 
     public function testIsAFacade()
