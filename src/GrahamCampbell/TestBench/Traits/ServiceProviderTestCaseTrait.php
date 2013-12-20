@@ -74,6 +74,8 @@ trait ServiceProviderTestCaseTrait
         $method = $reflection->getMethod("provides");
         $method->setAccessible(true);
 
-        $this->assertTrue(is_array($method->invoke($this->getServiceProviderClass())));
+        $serviceprovider = $this->getServiceProviderClass();
+
+        $this->assertTrue(is_array($method->invoke(new $serviceprovider())));
     }
 }

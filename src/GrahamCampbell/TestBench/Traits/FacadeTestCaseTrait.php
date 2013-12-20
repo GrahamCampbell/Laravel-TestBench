@@ -100,7 +100,9 @@ trait FacadeTestCaseTrait
             $method = $reflection->getMethod("provides");
             $method->setAccessible(true);
 
-            $this->assertTrue(in_array($this->getFacadeAccessor(), $method->invoke($this->getServiceProviderClass())));
+            $serviceprovider = $this->getServiceProviderClass();
+
+            $this->assertTrue(in_array($this->getFacadeAccessor(), $method->invoke(new $serviceprovider())));
         }
     }
 }
