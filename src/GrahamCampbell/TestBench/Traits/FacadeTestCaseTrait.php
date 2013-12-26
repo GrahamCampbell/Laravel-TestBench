@@ -55,10 +55,7 @@ trait FacadeTestCaseTrait
      *
      * @return string
      */
-    protected function getServiceProviderClass()
-    {
-        return null;
-    }
+    abstract protected function getServiceProviderClass();
 
     public function testIsAClass()
     {
