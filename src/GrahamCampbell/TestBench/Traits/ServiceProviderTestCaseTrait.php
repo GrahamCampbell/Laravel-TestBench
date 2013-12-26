@@ -58,7 +58,7 @@ trait ServiceProviderTestCaseTrait
         $reflection = new ReflectionClass($this->getServiceProviderClass());
         $serviceprovider = new ReflectionClass('Illuminate\Support\ServiceProvider');
 
-        $this->assertTrue($this->getReflection()->isSubclassOf($serviceprovider));
+        $this->assertTrue($reflection->isSubclassOf($serviceprovider));
     }
 
     public function testDeferred()
