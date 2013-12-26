@@ -55,6 +55,42 @@ abstract class AbstractTestCase extends TestCase
     }
 
     /**
+     * Get the package service providers.
+     *
+     * @return array
+     */
+    protected function getPackageProviders()
+    {
+        $provider = $this->getServiceProviderClass();
+
+        if ($provider) {
+            return array_merge($this->getRequiredServiceProviders(), array($provider));
+        }
+        
+        return $this->getRequiredServiceProviders();
+    }
+
+    /**
+     * Get the required service providers.
+     *
+     * @return array
+     */
+    protected function getRequiredServiceProviders()
+    {
+        return array();
+    }
+
+    /**
+     * Get the service provider class.
+     *
+     * @return string
+     */
+    protected function getServiceProviderClass()
+    {
+        return null;
+    }
+
+    /**
      * Setup the test case.
      *
      * @return void
