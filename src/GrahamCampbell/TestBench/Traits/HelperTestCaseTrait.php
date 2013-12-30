@@ -14,13 +14,12 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\TestBench\Classes;
+namespace GrahamCampbell\TestBench\Traits;
 
-use PHPUnit_Framework_TestCase as TestCase;
-use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
+use Mockery;
 
 /**
- * This is the abstract test case class.
+ * This is the helper test case trait.
  *
  * @package    Laravel-TestBench
  * @author     Graham Campbell
@@ -28,7 +27,51 @@ use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
  * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/develop/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-TestBench
  */
-abstract class AbstractTestCase extends TestCase
+trait HelperTestCaseTrait
 {
-    use HelperTestCaseTrait;
+    /**
+     * Setup the test case.
+     *
+     * @return void
+     */
+    public function setUp()
+    {
+        parent::setUp();
+
+        $this->start();
+    }
+
+    /**
+     * Run extra setup code.
+     *
+     * @return void
+     */
+    protected function start()
+    {
+        // call more setup methods
+    }
+
+    /**
+     * Tear down the test case.
+     *
+     * @return void
+     */
+    public function tearDown()
+    {
+        parent::tearDown();
+
+        Mockery::close();
+
+        $this->finish();
+    }
+
+    /**
+     * Run extra tear down code.
+     *
+     * @return void
+     */
+    protected function finish()
+    {
+        // call more tear down methods
+    }
 }
