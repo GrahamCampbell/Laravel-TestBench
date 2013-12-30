@@ -18,6 +18,7 @@ namespace GrahamCampbell\TestBench\Classes;
 
 use Orchestra\Testbench\TestCase;
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
+use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
 
 /**
  * This is the abstract laravel test case class.
@@ -30,7 +31,7 @@ use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
  */
 abstract class AbstractLaravelTestCase extends TestCase
 {
-    use HelperTestCaseTrait;
+    use HelperTestCaseTrait, LaravelTestCaseTrait;
 
     /**
      * Get the application base path.
