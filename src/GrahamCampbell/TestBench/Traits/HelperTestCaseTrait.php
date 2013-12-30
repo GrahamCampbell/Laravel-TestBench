@@ -74,4 +74,47 @@ trait HelperTestCaseTrait
     {
         // call more tear down methods
     }
+
+    /**
+     * Assert that the element exists in the array.
+     *
+     * @param  mixed  $needle
+     * @param  array  $haystack
+     * @param  bool   $strict
+     * @return void
+     */
+    protected function assertInArray($needle, $haystack, $strict = false)
+    {
+        $message = "Expected the array to contain the element '$needle'.";
+
+        $this->assertTrue(in_array($needle, $haystack, $strict), $message);
+    }
+
+    /**
+     * Assert that the array key exists.
+     *
+     * @param  mixed  $key
+     * @param  array  $array
+     * @return void
+     */
+    protected function assertArrayKeyExists($key, $array)
+    {
+        $message = "Expected the array to contain the key '$key'.";
+
+        $this->assertTrue(array_key_exists($key, $array), $message);
+    }
+
+    /**
+     * Assert that the specified method exists on the class.
+     *
+     * @param  string  $method
+     * @param  string  $class
+     * @return void
+     */
+    protected function assertMethodExists($method, $class)
+    {
+        $message = "Expected the class '$class' to have method '$method'.";
+
+        $this->assertTrue(method_exists($class, $method), $message);
+    }
 }
