@@ -16,8 +16,6 @@
 
 namespace GrahamCampbell\TestBench\Traits;
 
-use Mockery;
-
 /**
  * This is the laravel test case trait.
  *
