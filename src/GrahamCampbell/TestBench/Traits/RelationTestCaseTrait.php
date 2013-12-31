@@ -32,129 +32,129 @@ trait RelationTestCaseTrait
     /**
      * Assert a one-to-one relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertHasOne($relation, $class)
+    protected function assertHasOne($relationship, $class)
     {
-        $this->assertRelationship($relation, $class, 'hasOne', 'HasOne');
+        $this->assertRelationship($relationship, $class, 'hasOne', 'HasOne');
     }
 
     /**
      * Assert a polymorphic one-to-one relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertMorphOne($relation, $class)
+    protected function assertMorphOne($relationship, $class)
     {
-        $this->assertRelationship($relation, $class, 'morphOne', 'MorphOne');
+        $this->assertRelationship($relationship, $class, 'morphOne', 'MorphOne');
     }
 
     /**
      * Assert an inverse one-to-one relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertBelongsTo($parent, $child)
+    protected function assertBelongsTo($relationship, $class)
     {
-        $this->assertRelationship($parent, $child, 'belongsTo', 'BelongsTo');
+        $this->assertRelationship($relationship, $class, 'belongsTo', 'BelongsTo');
     }
 
     /**
      * Assert a polymorphic inverse one-to-one relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertMorphTo($relation, $class)
+    protected function assertMorphTo($relationship, $class)
     {
-        $this->assertRelationship($relation, $class, 'morphTo', 'BelongsTo');
+        $this->assertRelationship($relationship, $class, 'morphTo', 'BelongsTo');
     }
 
     /**
      * Assert a one-to-many relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertHasMany($relation, $class)
+    protected function assertHasMany($relationship, $class)
     {
-        $this->assertRelationship($relation, $class, 'hasMany', 'HasMany');
+        $this->assertRelationship($relationship, $class, 'hasMany', 'HasMany');
     }
 
     /**
      * Assert a has-many-through relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertHasManyThrough($relation, $class)
+    protected function assertHasManyThrough($relationship, $class)
     {
-        $this->assertRelationship($relation, $class, 'hasManyThrough', 'HasManyThrough');
+        $this->assertRelationship($relationship, $class, 'hasManyThrough', 'HasManyThrough');
     }
 
     /**
      * Assert a polymorphic one-to-many relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertMorphMany($relation, $class, $morphable)
+    protected function assertMorphMany($relationship, $class)
     {
-        $this->assertRelationship($relation, $class, 'morphMany', 'MorphMany');
+        $this->assertRelationship($relationship, $class, 'morphMany', 'MorphMany');
     }
 
     /**
      * Assert a many-to-many relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertBelongsToMany($parent, $child)
+    protected function assertBelongsToMany($relationship, $class)
     {
-        $this->assertRelationship($parent, $child, 'belongsToMany', 'BelongsToMany');
+        $this->assertRelationship($relationship, $class, 'belongsToMany', 'BelongsToMany');
     }
 
     /**
      * Assert a polymorphic many-to-many relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertMorphToMany($parent, $child)
+    protected function assertMorphToMany($relationship, $class)
     {
-        $this->assertRelationship($parent, $child, 'morphToMany', 'MorphToMany');
+        $this->assertRelationship($relationship, $class, 'morphToMany', 'MorphToMany');
     }
 
     /**
      * Assert a polymorphic inverse many-to-many relationship exists.
      *
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $relationship
+     * @param  string  $class
      * @return void
      */
-    protected function assertMorphByMany($parent, $child)
+    protected function assertMorphByMany($relationship, $class)
     {
-        $this->assertRelationship($parent, $child, 'morphByMany', 'MorphToMany');
+        $this->assertRelationship($relationship, $class, 'morphByMany', 'MorphToMany');
     }
 
     /**
      * Assert a specified relationship exists.
      *
      * @param  string  $relationship
-     * @param  string  $parent
-     * @param  string  $child
+     * @param  string  $class
+     * @param  string  $type
      * @param  string  $relation
      * @return void
      */
@@ -185,24 +185,25 @@ trait RelationTestCaseTrait
         $args = $this->getArgumentsRelationship($relationship, $class, $type);
 
         switch (count($args)) {
-            case 1 :
+            case 1:
                 $class->shouldReceive($type)->once()
                     ->with('/'.str_singular($relationship).'/i')->andReturn($mock);
                 break;
-            case 2 :
+            case 2:
                 $class->shouldReceive($type)->once()
                     ->with('/'.str_singular($relationship).'/i', $args[1])->andReturn($mock);
                 break;
-            case 3 :
+            case 3:
                 $class->shouldReceive($type)->once()
                     ->with('/'.str_singular($relationship).'/i', $args[1], $args[2])->andReturn($mock);
                 break;
-            case 4 :
+            case 4:
                 $class->shouldReceive($type)->once()
                     ->with('/'.str_singular($relationship).'/i', $args[1], $args[2], $args[3])->andReturn($mock);
                 break;
-            default :
-                $class->shouldReceive($type)->once()->andReturn($mock);
+            default:
+                $class->shouldReceive($type)->once()
+                    ->andReturn($mock);
                 break;
         }
 
