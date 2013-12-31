@@ -84,30 +84,13 @@ trait HelperTestCaseTrait
      * @param  string  $msg
      * @return void
      */
-    protected function assertInArray($needle, $haystack, $strict = false, $msg = null)
+    protected function assertInArray($needle, $haystack, $msg = '')
     {
-        if (!$msg) {
+        if (empty(trim($msg))) {
             $msg = "Expected the array to contain the element '$needle'.";
         }
 
-        $this->assertTrue(in_array($needle, $haystack, $strict), $msg);
-    }
-
-    /**
-     * Assert that the array key exists.
-     *
-     * @param  mixed   $key
-     * @param  array   $array
-     * @param  string  $msg
-     * @return void
-     */
-    protected function assertArrayKeyExists($key, $array, $msg = null)
-    {
-        if (!$msg) {
-            $msg = "Expected the array to contain the key '$key'.";
-        }
-
-        $this->assertTrue(array_key_exists($key, $array), $msg);
+        $this->assertTrue(in_array($needle, $haystack, true), $msg);
     }
 
     /**
@@ -118,9 +101,9 @@ trait HelperTestCaseTrait
      * @param  string  $msg
      * @return void
      */
-    protected function assertMethodExists($method, $class, $msg = null)
+    protected function assertMethodExists($method, $class, $msg = '')
     {
-        if (!$msg) {
+        if (empty(trim($msg))) {
             $msg = "Expected the class '$class' to have method '$method'.";
         }
 
