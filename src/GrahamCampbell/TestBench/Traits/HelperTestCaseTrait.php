@@ -103,7 +103,7 @@ trait HelperTestCaseTrait
      */
     protected function assertMethodExists($method, $class, $msg = '')
     {
-        if ($msg = '')) {
+        if ($msg = '') {
             $msg = "Expected the class '$class' to have method '$method'.";
         }
 
