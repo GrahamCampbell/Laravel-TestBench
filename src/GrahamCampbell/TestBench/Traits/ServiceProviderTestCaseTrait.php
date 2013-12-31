@@ -46,40 +46,48 @@ trait ServiceProviderTestCaseTrait
         return false;
     }
 
-    public function testIsAClass()
-    {
-        $serviceprovider = $this->getServiceProviderClass();
-
-        $this->assertTrue(is_object(new $serviceprovider($this->app)));
-    }
-
     public function testIsAServiceProvider()
     {
-        $reflection = new ReflectionClass($this->getServiceProviderClass());
+        $class = $this->getServiceProviderClass();
+
+        $reflection = new ReflectionClass($class);
+
         $serviceprovider = new ReflectionClass('Illuminate\Support\ServiceProvider');
 
-        $this->assertTrue($reflection->isSubclassOf($serviceprovider));
+        $msg = "Expected class '$class' to be a service provider.";
+
+        $this->assertTrue($reflection->isSubclassOf($serviceprovider), $msg);
     }
 
     public function testDeferred()
     {
-        $reflection = new ReflectionClass($this->getServiceProviderClass());
+        $class = $this->getServiceProviderClass();
+        $deferred = $this->getServiceProviderDeferred();
+
+        $reflection = new ReflectionClass($class);
+
         $method = $reflection->getMethod("isDeferred");
         $method->setAccessible(true);
 
-        $serviceprovider = $this->getServiceProviderClass();
+        if ($deferred) {
+            $msg = "Expected class '$class' to be deferred.";
+        } else {
+            $msg = "Expected class '$class' not to be deferred.";
+        }
 
-        $this->assertEquals($this->getServiceProviderDeferred(), $method->invoke(new $serviceprovider($this->app)));
+        $this->assertEquals($deferred, $method->invoke(new $class($this->app)), $msg);
     }
 
     public function testProvides()
     {
-        $reflection = new ReflectionClass($this->getServiceProviderClass());
+        $class = $this->getServiceProviderClass();
+        $reflection = new ReflectionClass($class);
+
         $method = $reflection->getMethod("provides");
         $method->setAccessible(true);
 
-        $serviceprovider = $this->getServiceProviderClass();
+        $msg = "Expected class '$class' to provide a valid list of services.";
 
-        $this->assertTrue(is_array($method->invoke(new $serviceprovider($this->app))));
+        $this->assertInternalType('array', $method->invoke(new $class($this->app)), $msg);
     }
 }
