@@ -67,7 +67,7 @@ abstract class AbstractLaravelTestCase extends TestCase
             $app['router']->enableFilters();
         }
 
-        $this->additionalSetup();
+        $this->additionalSetup($app);
     }
 
     /**
