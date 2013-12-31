@@ -104,7 +104,7 @@ trait FacadeTestCaseTrait
             $method = $reflection->getMethod("provides");
             $method->setAccessible(true);
 
-            $msg = "Expected class '$provider' to provide '$root'.";
+            $msg = "Expected class '$provider' to provide '$accessor'.";
 
             $this->assertInArray($accessor, $method->invoke(new $provider($this->app)), true, $msg);
         }
