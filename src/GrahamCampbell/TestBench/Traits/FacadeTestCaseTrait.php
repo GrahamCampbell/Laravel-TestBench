@@ -57,49 +57,56 @@ trait FacadeTestCaseTrait
      */
     abstract protected function getServiceProviderClass();
 
-    public function testIsAClass()
-    {
-        $facade = $this->getFacadeClass();
-
-        $this->assertTrue(is_object(new $facade()));
-    }
-
     public function testIsAFacade()
     {
-        $reflection = new ReflectionClass($this->getFacadeClass());
+        $class = $this->getFacadeClass();
+        $reflection = new ReflectionClass($class);
         $facade = new ReflectionClass('Illuminate\Support\Facades\Facade');
 
-        $this->assertTrue($reflection->isSubclassOf($facade));
+        $msg = "Expected class '$class' to be a facade."
+
+        $this->assertTrue($reflection->isSubclassOf($facade), $msg);
     }
 
     public function testFacadeAccessor()
     {
+        $accessor = $this->getFacadeAccessor();
+        $class = $this->getFacadeClass();
         $reflection = new ReflectionClass($this->getFacadeClass());
         $method = $reflection->getMethod("getFacadeAccessor");
         $method->setAccessible(true);
 
-        $this->assertEquals($this->getFacadeAccessor(), $method->invoke(null));
+        $msg = "Expected class '$class' to have an accessor of '$accessor'."
+
+        $this->assertEquals($accessor, $method->invoke(null)), $msg;
     }
 
     public function testFacadeRoot()
     {
-        $reflection = new ReflectionClass($this->getFacadeClass());
+        $root = $this->getFacadeRoot();
+        $class = $this->getFacadeClass();
+        $reflection = new ReflectionClass($class);
         $method = $reflection->getMethod("getFacadeRoot");
         $method->setAccessible(true);
 
-        $this->assertInstanceOf($this->getFacadeRoot(), $method->invoke(null));
+        $msg = "Expected class '$class' to have a root of '$root'."
+
+        $this->assertInstanceOf($root, $method->invoke(null), $msg);
     }
 
     public function testServiceProvider()
     {
-        if ($this->getServiceProviderClass()) {
-            $reflection = new ReflectionClass($this->getServiceProviderClass());
+        $accessor = $this->getFacadeAccessor();
+        $provider = $this->getServiceProviderClass();
+
+        if ($provider) {
+            $reflection = new ReflectionClass($provider);
             $method = $reflection->getMethod("provides");
             $method->setAccessible(true);
 
-            $serviceprovider = $this->getServiceProviderClass();
+            $msg = "Expected class '$provider' to provide '$root'."
 
-            $this->assertTrue(in_array($this->getFacadeAccessor(), $method->invoke(new $serviceprovider($this->app))));
+            $this->assertInArray($accessor, $method->invoke(new $provider($this->app)), true, $msg);
         }
     }
 }
