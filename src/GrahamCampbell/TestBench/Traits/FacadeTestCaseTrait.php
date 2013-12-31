@@ -63,7 +63,7 @@ trait FacadeTestCaseTrait
         $reflection = new ReflectionClass($class);
         $facade = new ReflectionClass('Illuminate\Support\Facades\Facade');
 
-        $msg = "Expected class '$class' to be a facade."
+        $msg = "Expected class '$class' to be a facade.";
 
         $this->assertTrue($reflection->isSubclassOf($facade), $msg);
     }
@@ -76,7 +76,7 @@ trait FacadeTestCaseTrait
         $method = $reflection->getMethod("getFacadeAccessor");
         $method->setAccessible(true);
 
-        $msg = "Expected class '$class' to have an accessor of '$accessor'."
+        $msg = "Expected class '$class' to have an accessor of '$accessor'.";
 
         $this->assertEquals($accessor, $method->invoke(null)), $msg;
     }
@@ -89,7 +89,7 @@ trait FacadeTestCaseTrait
         $method = $reflection->getMethod("getFacadeRoot");
         $method->setAccessible(true);
 
-        $msg = "Expected class '$class' to have a root of '$root'."
+        $msg = "Expected class '$class' to have a root of '$root'.";
 
         $this->assertInstanceOf($root, $method->invoke(null), $msg);
     }
@@ -104,7 +104,7 @@ trait FacadeTestCaseTrait
             $method = $reflection->getMethod("provides");
             $method->setAccessible(true);
 
-            $msg = "Expected class '$provider' to provide '$root'."
+            $msg = "Expected class '$provider' to provide '$root'.";
 
             $this->assertInArray($accessor, $method->invoke(new $provider($this->app)), true, $msg);
         }
