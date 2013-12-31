@@ -85,9 +85,9 @@ trait HelperTestCaseTrait
      */
     protected function assertInArray($needle, $haystack, $strict = false)
     {
-        $message = "Expected the array to contain the element '$needle'.";
+        $msg = "Expected the array to contain the element '$needle'.";
 
-        $this->assertTrue(in_array($needle, $haystack, $strict), $message);
+        $this->assertTrue(in_array($needle, $haystack, $strict), $msg);
     }
 
     /**
@@ -99,9 +99,9 @@ trait HelperTestCaseTrait
      */
     protected function assertArrayKeyExists($key, $array)
     {
-        $message = "Expected the array to contain the key '$key'.";
+        $msg = "Expected the array to contain the key '$key'.";
 
-        $this->assertTrue(array_key_exists($key, $array), $message);
+        $this->assertTrue(array_key_exists($key, $array), $msg);
     }
 
     /**
@@ -113,8 +113,8 @@ trait HelperTestCaseTrait
      */
     protected function assertMethodExists($method, $class)
     {
-        $message = "Expected the class '$class' to have method '$method'.";
+        $msg = "Expected the class '$class' to have method '$method'.";
 
-        $this->assertTrue(method_exists($class, $method), $message);
+        $this->assertTrue(method_exists($class, $method), $msg);
     }
 }
