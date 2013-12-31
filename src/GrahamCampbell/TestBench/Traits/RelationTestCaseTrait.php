@@ -187,23 +187,22 @@ trait RelationTestCaseTrait
         switch (count($args)) {
             case 1 :
                 $class->shouldReceive($type)->once()
-                    ->with('/'.str_singular($relationship).'/i')
-                    ->andReturn();
+                    ->with('/'.str_singular($relationship).'/i')->andReturn($mock);
                 break;
             case 2 :
                 $class->shouldReceive($type)->once()
-                    ->with('/'.str_singular($relationship).'/i', $args[1]);
+                    ->with('/'.str_singular($relationship).'/i', $args[1])->andReturn($mock);
                 break;
             case 3 :
                 $class->shouldReceive($type)->once()
-                    ->with('/'.str_singular($relationship).'/i', $args[1], $args[2]);
+                    ->with('/'.str_singular($relationship).'/i', $args[1], $args[2])->andReturn($mock);
                 break;
             case 4 :
                 $class->shouldReceive($type)->once()
-                    ->with('/'.str_singular($relationship).'/i', $args[1], $args[2], $args[3]);
+                    ->with('/'.str_singular($relationship).'/i', $args[1], $args[2], $args[3])->andReturn($mock);
                 break;
             default :
-                $class->shouldReceive($type)->once();
+                $class->shouldReceive($type)->once()->andReturn($mock);
                 break;
         }
 
