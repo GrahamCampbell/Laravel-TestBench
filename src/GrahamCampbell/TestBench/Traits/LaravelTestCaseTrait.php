@@ -63,8 +63,8 @@ trait LaravelTestCaseTrait
     /**
      * Assert that the text is not in the specified element.
      *
-     * @param  string    $text
-     * @param  string    $element
+     * @param  string  $text
+     * @param  string  $element
      * @return void
      */
     protected function assertNotSee($text, $element = 'body')
