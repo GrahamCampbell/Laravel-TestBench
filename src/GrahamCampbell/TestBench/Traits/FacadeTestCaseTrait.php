@@ -24,7 +24,7 @@ use ReflectionClass;
  * @package    Laravel-TestBench
  * @author     Graham Campbell
  * @copyright  Copyright 2013-2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/develop/LICENSE.md
+ * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-TestBench
  */
 trait FacadeTestCaseTrait
