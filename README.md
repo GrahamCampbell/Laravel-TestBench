@@ -3,8 +3,8 @@ Laravel TestBench
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/Laravel-TestBench/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-TestBench.png?branch=develop)](https://travis-ci.org/GrahamCampbell/Laravel-TestBench)
-[![Coverage Status](https://coveralls.io/repos/GrahamCampbell/Laravel-TestBench/badge.png?branch=develop)](https://coveralls.io/r/GrahamCampbell/Laravel-TestBench)
+[![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-TestBench.png)](https://travis-ci.org/GrahamCampbell/Laravel-TestBench)
+[![Coverage Status](https://coveralls.io/repos/GrahamCampbell/Laravel-TestBench/badge.png)](https://coveralls.io/r/GrahamCampbell/Laravel-TestBench)
 [![Scrutinizer Quality Stestbench](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/badges/quality-score.png?s=b02a2e89a150f28d8c82129d69688725a2a58cb8)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench)
 [![Latest Version](https://poser.pugx.org/graham-campbell/testbench/v/stable.png)](https://packagist.org/packages/graham-campbell/testbench)
 [![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-TestBench.png)](http://stillmaintained.com/GrahamCampbell/Laravel-TestBench)
@@ -19,12 +19,12 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 * Laravel TestBench uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench) and [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-TestBench) to run additional tests and checks.  
 * Laravel TestBench uses [Composer](https://getcomposer.org) to load and manage dependencies.  
 * Laravel TestBench provides a [change log](https://github.com/GrahamCampbell/Laravel-TestBench/blob/develop/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), and a [wiki](https://github.com/GrahamCampbell/Laravel-TestBench/wiki).  
-* Laravel TestBench is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-TestBench/blob/develop/LICENSE.md).  
+* Laravel TestBench is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md).  
 
 
 ## System Requirements
 
-* PHP 5.4.7+ or PHP 5.5+ is required.
+* PHP 5.4.7+ or PHP 5.5+ is required.  
 * You will need [Laravel 4.1](http://laravel.com) because this package is designed for it.  
 * You will need [Composer](https://getcomposer.org) installed to load the dependencies of Laravel TestBench.  
 
@@ -33,11 +33,11 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 Please check the system requirements before installing Laravel TestBench.  
 
-To get the latest version of Laravel TestBench, simply require it in your `composer.json` file.
+To get the latest version of Laravel TestBench, simply require it in your `composer.json` file.  
 
-`"graham-campbell/testbench": "dev-master"`
+`"graham-campbell/testbench": "*"`  
 
-For the time being, you will also need to add this to your `composer.json` too.
+For the time being, you will also need to add this to your `composer.json` too.  
 
 ```
 "repositories": [
@@ -63,9 +63,17 @@ For the time being, you will also need to add this to your `composer.json` too.
 ],
 ```
 
-You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
+You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.  
 
-Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The TestBench class would be a good place to start. There are no service providers to register.
+Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.  
+
+
+## Usage
+
+There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-TestBench
+) for Laravel TestBench.  
+
+You may see an example of implementation in pretty much all of my [Laravel 4.1](http://laravel.com) packages.  
 
 
 ## Updating Your Fork
@@ -81,7 +89,7 @@ The first command is only necessary the first time. If you have issues merging, 
 
 You can then update the branch:  
 
-    git pull --rebase upstream develop
+    git pull --rebase upstream master
     git push --force origin <branch_name>
 
 Once it is set up, run `git mergetool`. Once all conflicts are fixed, run `git rebase --continue`, and `git push --force origin <branch_name>`.  
@@ -91,17 +99,16 @@ Once it is set up, run `git mergetool`. Once all conflicts are fixed, run `git r
 
 Please submit pull requests against the develop branch.  
 
-* Any pull requests made against the master branch will be closed immediately.  
-* If you plan to fix a bug, please create a branch called `fix-`, followed by an appropriate name.  
-* If you plan to add a feature, please create a branch called `feature-`, followed by an appropriate name.  
-* Please follow PSR-2 standards except namespace declarations should be on the same line as `<?php`.  
+* Bug fixes shouldn't be sent to the master branch unless they fix features that exist only in the upcoming release.  
+* Before sending a pull request for a new feature, you should first create an issue with [Proposal] in the title.  
+* Please follow the [PSR-2 Coding Style](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and [PHP-FIG Naming Conventions](https://github.com/php-fig/fig-standards/blob/master/bylaws/002-psr-naming-conventions.md).  
 
 
 ## License
 
 Apache License  
 
-Copyright 2013 Graham Campbell  
+Copyright 2013-2014 Graham Campbell  
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

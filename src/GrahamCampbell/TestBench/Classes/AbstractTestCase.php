@@ -1,4 +1,4 @@
-<?php namespace GrahamCampbell\TestBench\Classes;
+<?php
 
 /**
  * This file is part of Laravel TestBench by Graham Campbell.
@@ -12,30 +12,23 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+
+namespace GrahamCampbell\TestBench\Classes;
+
+use PHPUnit_Framework_TestCase as TestCase;
+use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
+
+/**
+ * This is the abstract test case class.
  *
  * @package    Laravel-TestBench
  * @author     Graham Campbell
- * @license    Apache License
- * @copyright  Copyright 2013 Graham Campbell
+ * @copyright  Copyright 2013-2014 Graham Campbell
+ * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-TestBench
  */
-
-use Orchestra\Testbench\TestCase;
-
-abstract class TestBench extends TestCase
+abstract class AbstractTestCase extends TestCase
 {
-
-    abstract protected function getBasePath();
-
-    protected function getEnvironmentSetUp($app)
-    {
-        $app['path.base'] = realpath($this->getBasePath);
-
-        $app['config']->set('database.default', 'sqlite');
-        $app['config']->set('database.connections.sqlite', array(
-            'driver'   => 'sqlite',
-            'database' => ':memory:',
-            'prefix'   => ''
-        ));
-    }
+    use HelperTestCaseTrait;
 }
