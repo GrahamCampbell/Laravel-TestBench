@@ -16,8 +16,8 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 * Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell).  
 * Laravel TestBench relies on [PHPUnit](https://github.com/sebastianbergmann/phpunit) and the [Orchestral Testbench](https://github.com/orchestral/testbench) package.  
-* Laravel TestBench uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-TestBench) with [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-TestBench) to run tests to check if it's working as it should.  
-* Laravel TestBench uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench) and [SensioLabsInsight](https://insight.sensiolabs.com/projects/c70488ec-94bc-44e7-b694-e6dd701416c8) to run additional tests and checks.  
+* Laravel TestBench uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-TestBench) with [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-TestBench) to check everything is working.  
+* Laravel TestBench uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench) and [SensioLabsInsight](https://insight.sensiolabs.com/projects/c70488ec-94bc-44e7-b694-e6dd701416c8) to run additional checks.  
 * Laravel TestBench uses [Composer](https://getcomposer.org) to load and manage dependencies.  
 * Laravel TestBench provides a [change log](https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), and [api docs](http://grahamcampbell.github.io/Laravel-TestBench).  
 * Laravel TestBench is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md).  
