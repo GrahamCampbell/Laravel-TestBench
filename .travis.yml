@@ -3,7 +3,6 @@ language: php
 php:
   - 5.4
   - 5.5
-  - hhvm
 
 before_script:
   - composer self-update
@@ -17,8 +16,3 @@ after_success:
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
   - php vendor/bin/coveralls -v
-
-matrix:
-  allow_failures:
-    - php: hhvm
-  fast_finish: true
