@@ -19,7 +19,7 @@ namespace GrahamCampbell\TestBench\Traits;
 use ReflectionClass;
 
 /**
- * This is the facade test case trait.
+ * This is the service orovider test case trait.
  *
  * @package    Laravel-TestBench
  * @author     Graham Campbell
