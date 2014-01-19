@@ -8,6 +8,7 @@ Laravel TestBench
 [![Scrutinizer Quality Stestbench](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/badges/quality-score.png?s=b02a2e89a150f28d8c82129d69688725a2a58cb8)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c70488ec-94bc-44e7-b694-e6dd701416c8/mini.png)](https://insight.sensiolabs.com/projects/c70488ec-94bc-44e7-b694-e6dd701416c8)
 [![Latest Version](https://poser.pugx.org/graham-campbell/testbench/v/stable.png)](https://packagist.org/packages/graham-campbell/testbench)
+[![License](https://poser.pugx.org/graham-campbell/testbench/license.png)](https://packagist.org/packages/graham-campbell/testbench)
 
 
 ## What Is Laravel TestBench?
