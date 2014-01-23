@@ -2,6 +2,12 @@ CHANGE LOG
 ==========
 
 
+## V0.3 Alpha (Upcoming)
+
+* Bumped dependencies
+* Model test trait improvements
+
+
 ## V0.2 Alpha (21/01/2014)
 
 * Added some testing tools and helpers

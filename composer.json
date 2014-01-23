@@ -39,8 +39,8 @@
         "symfony/stopwatch": "2.4.*",
         "symfony/yaml": "2.4.*",
         "orchestra/testbench": "2.1.*",
-        "mockery/mockery": "0.8.*",
-        "phpunit/phpunit": "3.7.*",
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "3.8.*",
         "sebastian/finder-facade": "1.1.*",
         "sebastianbergmann/phpcov": "1.1.0",
         "satooshi/php-coveralls": "dev-master",
@@ -54,7 +54,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.2-dev"
+            "dev-master": "0.3-dev"
         }
     },
     "minimum-stability": "dev",
