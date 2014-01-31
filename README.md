@@ -70,6 +70,11 @@ You'll then need to run `composer install` or `composer update` to download it a
 Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
 
 
+## Configuration
+
+Laravel TestBench requires no configuration. Just follow the simple install instructions and go!
+
+
 ## Usage
 
 There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-TestBench
