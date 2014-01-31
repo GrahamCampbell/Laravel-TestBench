@@ -103,7 +103,7 @@ abstract class AbstractLaravelTestCase extends TestCase
         if ($provider) {
             return array_merge($this->getRequiredServiceProviders(), array($provider));
         }
-        
+
         return $this->getRequiredServiceProviders();
     }
 
