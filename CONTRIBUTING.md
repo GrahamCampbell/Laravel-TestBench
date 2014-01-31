@@ -1,7 +1,5 @@
 ## Updating Your Fork
 
-The latest and greatest source can be found on [GitHub](https://github.com/GrahamCampbell/Laravel-TestBench).
-
 Before submitting a pull request, you should ensure that your fork is up to date.
 
 You may fork Laravel TestBench:
