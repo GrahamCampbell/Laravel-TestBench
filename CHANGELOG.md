@@ -2,10 +2,16 @@ CHANGE LOG
 ==========
 
 
+## V0.4 Alpha (Upcoming)
+
+* Model test trait improvements
+
+
 ## V0.3 Alpha (Upcoming)
 
+* PSR-4 autoloading
+* Updated docs
 * Bumped dependencies
-* Model test trait improvements
 
 
 ## V0.2 Alpha (21/01/2014)
