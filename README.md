@@ -35,9 +35,7 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 Please check the system requirements before installing Laravel TestBench.
 
-To get the latest version of Laravel TestBench, simply require it in your `composer.json` file.
-
-`"graham-campbell/testbench": "*"`
+To get the latest version of Laravel TestBench, simply require `"graham-campbell/testbench": "0.2.*@alpha"` in your `composer.json` file.
 
 For the time being, you will also need to add this to your `composer.json` too.
 
