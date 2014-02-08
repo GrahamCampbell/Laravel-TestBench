@@ -47,9 +47,9 @@
         "guzzle/guzzle": "3.8.*"
     },
     "autoload": {
-        "psr-0": {
-            "GrahamCampbell\\TestBench": "src/",
-            "GrahamCampbell\\Tests\\TestBench": "tests/"
+        "psr-4": {
+            "GrahamCampbell\\TestBench\\": "src/",
+            "GrahamCampbell\\Tests\\TestBench\\": "tests/"
         }
     },
     "extra": {
