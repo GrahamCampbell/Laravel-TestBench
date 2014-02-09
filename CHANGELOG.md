@@ -12,6 +12,7 @@ CHANGE LOG
 * PSR-4 autoloading
 * Updated docs
 * Bumped dependencies
+* Improved travis testing
 
 
 ## V0.2 Alpha (21/01/2014)
