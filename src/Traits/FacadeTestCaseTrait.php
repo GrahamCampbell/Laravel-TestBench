@@ -72,7 +72,7 @@ trait FacadeTestCaseTrait
     {
         $accessor = $this->getFacadeAccessor();
         $class = $this->getFacadeClass();
-        $reflection = new ReflectionClass($this->getFacadeClass());
+        $reflection = new ReflectionClass($class);
         $method = $reflection->getMethod("getFacadeAccessor");
         $method->setAccessible(true);
 
@@ -83,6 +83,12 @@ trait FacadeTestCaseTrait
 
     public function testFacadeRoot()
     {
+        if (defined('HHVM_VERSION')) {
+            if (version_compare(HHVM_VERSION, '2.5.0') === 1) {
+                return $this->markTestSkipped('Reflection API is broken on this version of HHVM.');
+            }
+        }
+
         $root = $this->getFacadeRoot();
         $class = $this->getFacadeClass();
         $reflection = new ReflectionClass($class);
