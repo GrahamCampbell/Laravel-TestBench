@@ -9,27 +9,6 @@
             "email": "graham@mineuk.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "sebastianbergmann/phpcov",
-                "version": "1.1.0",
-                "dist": {
-                    "url": "https://github.com/sebastianbergmann/phpcov/archive/1.1.0.zip",
-                    "type": "zip"
-                },
-                "source": {
-                    "url": "https://github.com/sebastianbergmann/phpcov.git",
-                    "type": "git",
-                    "reference": "1.1.0"
-                },
-                "bin": [
-                    "phpcov.php"
-                ]
-            }
-        }
-    ],
     "require": {
         "php": ">=5.4.7",
         "laravel/framework": "4.1.*",
@@ -38,13 +17,11 @@
         "symfony/filesystem": "2.4.*",
         "symfony/stopwatch": "2.4.*",
         "symfony/yaml": "2.4.*",
+        "guzzle/guzzle": "3.8.*",
         "orchestra/testbench": "2.1.*",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "3.8.*",
-        "sebastian/finder-facade": "1.1.*",
-        "sebastianbergmann/phpcov": "1.1.0",
-        "satooshi/php-coveralls": "dev-master",
-        "guzzle/guzzle": "3.8.*"
+        "satooshi/php-coveralls": "dev-master"
     },
     "autoload": {
         "psr-4": {

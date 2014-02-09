@@ -35,35 +35,7 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 Please check the system requirements before installing Laravel TestBench.
 
-To get the latest version of Laravel TestBench, simply require `"graham-campbell/testbench": "0.2.*@alpha"` in your `composer.json` file.
-
-For the time being, you will also need to add this to your `composer.json` too.
-
-```
-"repositories": [
-    {
-        "type": "package",
-        "package": {
-            "name": "sebastianbergmann/phpcov",
-            "version": "1.1.0",
-            "dist": {
-                "url": "https://github.com/sebastianbergmann/phpcov/archive/1.1.0.zip",
-                "type": "zip"
-            },
-            "source": {
-                "url": "https://github.com/sebastianbergmann/phpcov.git",
-                "type": "git",
-                "reference": "1.1.0"
-            },
-            "bin": [
-                "phpcov.php"
-            ]
-        }
-    }
-],
-```
-
-You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
+To get the latest version of Laravel TestBench, simply require `"graham-campbell/testbench": "0.3.*@dev"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
 Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
 
