@@ -5,7 +5,7 @@ Laravel TestBench
 [![Build Status](https://img.shields.io/travis/GrahamCampbell/Laravel-TestBench/master.svg)](https://travis-ci.org/GrahamCampbell/Laravel-TestBench)
 [![Coverage Status](https://img.shields.io/coveralls/GrahamCampbell/Laravel-TestBench/master.svg)](https://coveralls.io/r/GrahamCampbell/Laravel-TestBench)
 [![Software License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md)
-[![Latest Version](https://img.shields.io/github/tag/GrahamCampbell/Laravel-TestBench.svg)](https://github.com/GrahamCampbell/Laravel-TestBench/releases)
+[![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench.svg)](https://github.com/GrahamCampbell/Laravel-TestBench/releases)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/badges/quality-score.png?s=b02a2e89a150f28d8c82129d69688725a2a58cb8)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c70488ec-94bc-44e7-b694-e6dd701416c8/mini.png)](https://insight.sensiolabs.com/projects/c70488ec-94bc-44e7-b694-e6dd701416c8)
 
