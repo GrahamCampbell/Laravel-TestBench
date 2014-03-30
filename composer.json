@@ -25,7 +25,11 @@
     },
     "autoload": {
         "psr-4": {
-            "GrahamCampbell\\TestBench\\": "src/",
+            "GrahamCampbell\\TestBench\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "GrahamCampbell\\Tests\\TestBench\\": "tests/"
         }
     },

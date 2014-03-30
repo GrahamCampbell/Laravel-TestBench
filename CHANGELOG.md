@@ -12,7 +12,7 @@ CHANGE LOG
 * PHP 5.6 and HHVM compatibility
 * PSR-4 autoloading
 * Updated docs
-* Bumped dependencies
+* Composer tweaks
 * Improved travis testing
 
 
