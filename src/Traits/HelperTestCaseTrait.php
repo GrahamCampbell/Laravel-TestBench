@@ -86,7 +86,7 @@ trait HelperTestCaseTrait
      */
     protected function assertInArray($needle, $haystack, $msg = '')
     {
-        if ($msg = '') {
+        if ($msg == '') {
             $msg = "Expected the array to contain the element '$needle'.";
         }
 
@@ -103,7 +103,7 @@ trait HelperTestCaseTrait
      */
     protected function assertMethodExists($method, $class, $msg = '')
     {
-        if ($msg = '') {
+        if ($msg == '') {
             $msg = "Expected the class '$class' to have method '$method'.";
         }
 
