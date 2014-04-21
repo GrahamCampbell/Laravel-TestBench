@@ -8,7 +8,7 @@ CHANGE LOG
 * Model test trait improvements
 
 
-## V0.3 Alpha (Upcoming)
+## V0.3 Alpha (21/04/2014)
 
 * PHP 5.6 and HHVM compatibility
 * PSR-4 autoloading
