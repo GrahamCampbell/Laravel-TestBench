@@ -12,7 +12,7 @@ Laravel TestBench
 
 ## What Is Laravel TestBench?
 
-Laravel TestBench provides some testing functionality for [Laravel 4.1](http://laravel.com).
+Laravel TestBench provides some testing functionality for [Laravel 4.2](http://laravel.com).
 
 * Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell).
 * Laravel TestBench relies on [PHPUnit](https://github.com/sebastianbergmann/phpunit) and the [Orchestral Testbench](https://github.com/orchestral/testbench) package.
@@ -25,8 +25,8 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 ## System Requirements
 
-* PHP 5.4.7+ or HHVM 3.0+ is required.
-* You will need [Laravel 4.1](http://laravel.com) because this package is designed for it.
+* PHP 5.4.7+ or HHVM 3.1+ is required.
+* You will need [Laravel 4.2](http://laravel.com) because this package is designed for it.
 * You will need [Composer](https://getcomposer.org) installed to load the dependencies of Laravel TestBench.
 
 
@@ -34,7 +34,7 @@ Laravel TestBench provides some testing functionality for [Laravel 4.1](http://l
 
 Please check the system requirements before installing Laravel TestBench.
 
-To get the latest version of Laravel TestBench, simply require `"graham-campbell/testbench": "0.3.*@alpha"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
+To get the latest version of Laravel TestBench, simply require `"graham-campbell/testbench": "~1.0"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
 Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
 
@@ -49,7 +49,7 @@ Laravel TestBench requires no configuration. Just follow the simple install inst
 There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-TestBench
 ) for Laravel TestBench.
 
-You may see an example of implementation in pretty much all of my [Laravel 4.1](http://laravel.com) packages.
+You may see an example of implementation in pretty much all of my [Laravel](http://laravel.com) packages.
 
 
 ## Updating Your Fork
