@@ -1,6 +1,6 @@
 {
     "name": "graham-campbell/testbench",
-    "description": "TestBench Provides Some Testing Functionality For Laravel 4.1",
+    "description": "TestBench Provides Some Testing Functionality For Laravel 4.2",
     "keywords": ["laravel", "framework", "test", "bench", "testbench", "TestBench", "Laravel TestBench", "Laravel-TestBench", "Graham Campbell", "GrahamCampbell"],
     "license": "Apache-2.0",
     "authors": [
