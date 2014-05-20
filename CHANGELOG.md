@@ -8,6 +8,11 @@ CHANGE LOG
 * Model test trait improvements
 
 
+## V0.3.1 Alpha (20/05/2014)
+
+* Composer updates
+
+
 ## V0.3 Alpha (21/04/2014)
 
 * PHP 5.6 and HHVM compatibility
