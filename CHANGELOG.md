@@ -5,7 +5,8 @@ CHANGE LOG
 ## V1.0 Beta 1 (Upcoming - July 2014)
 
 * Upgrade to Laravel 4.2
-* Model test trait improvements
+* Removed broken model test trait
+* Removed old hhvm reflection checks
 
 
 ## V0.3.1 Alpha (20/05/2014)
