@@ -58,11 +58,11 @@ trait HelperTestCaseTrait
      */
     public function tearDown()
     {
+        $this->finish();
+
         parent::tearDown();
 
         Mockery::close();
-
-        $this->finish();
     }
 
     /**
