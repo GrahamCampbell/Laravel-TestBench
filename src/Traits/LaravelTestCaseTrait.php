@@ -89,7 +89,7 @@ trait LaravelTestCaseTrait
             $injectable = false;
         }
 
-        $this->assertTrue($injectable, "The class "$name" couldn't be automatically injected.");
+        $this->assertTrue($injectable, "The class '$name' couldn't be automatically injected.");
     }
 
     /**
