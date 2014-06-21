@@ -100,15 +100,20 @@ trait LaravelTestCaseTrait
      */
     protected function makeInjectableClass($name)
     {
-        $class = str_random(64);
+        while(class_exists($class = 'testBenchStub'.str_random())) {}
 
         eval("
-            class $class {
+            class $class
+            {
                 protected \$object;
-                __construct(\\$name \$object) {
+
+                public function __construct(\\$name \$object)
+                {
                     \$this->object = \$object;
                 }
-                public function getInjectedObject() {
+
+                public function getInjectedObject()
+                {
                     return \$this->object;
                 }
             }
