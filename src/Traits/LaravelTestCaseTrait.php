@@ -101,18 +101,18 @@ trait LaravelTestCaseTrait
     protected function makeInjectableClass($name)
     {
         $class = str_random(64);
-        $string = <<<'EOT'
-class $class {
-    protected \$object;
-    __construct(\\$name \$object) {
-        \$this->object = \$object;
-    }
-    public function getInjectedObject() {
-        return \$this->object;
-    }
-}
-EOT;
-        eval($string);
+
+        eval("
+            class $class {
+                protected \$object;
+                __construct(\\$name \$object) {
+                    \$this->object = \$object;
+                }
+                public function getInjectedObject() {
+                    return \$this->object;
+                }
+            }
+        ");
 
         return $this->app->make($class);
     }
