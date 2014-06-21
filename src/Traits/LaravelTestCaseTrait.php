@@ -100,7 +100,9 @@ trait LaravelTestCaseTrait
      */
     protected function makeInjectableClass($name)
     {
-        while(class_exists($class = 'testBenchStub'.str_random())) {}
+        do {
+            $class = 'testBenchStub'.str_random();
+        } while (class_exists($class));
 
         eval("
             class $class
