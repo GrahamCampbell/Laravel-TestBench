@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\TestBench\Classes;
+namespace GrahamCampbell\TestBench;
 
 use Orchestra\Testbench\TestCase;
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
