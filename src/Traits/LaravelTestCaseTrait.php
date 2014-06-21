@@ -71,4 +71,49 @@ trait LaravelTestCaseTrait
     {
         return $this->assertSee($text, $element, 0);
     }
+
+    /**
+     * Assert that a class can be automatically injected.
+     *
+     * @param  string  $name
+     * @return void
+     */
+    protected function assertIsInjectable($name)
+    {
+        $injectable = true;
+
+        try {
+            $class = $this->makeInjectableClass($name);
+            $this->assertInstanceOf($name, $class->getInjectedObject());
+        } catch (\Exception $e) {
+            $injectable = false;
+        }
+
+        $this->assertTrue($injectable, "The class "$name" couldn't be automatically injected.");
+    }
+
+    /**
+     * Register and make a stub class to inject into.
+     *
+     * @param  string  $name
+     * @return mixed
+     */
+    protected function makeInjectableClass($name)
+    {
+        $class = str_random(64);
+        $string = <<<'EOT'
+class $class {
+    protected \$object;
+    __construct(\\$name \$object) {
+        \$this->object = \$object;
+    }
+    public function getInjectedObject() {
+        return \$this->object;
+    }
+}
+EOT;
+        eval($string);
+
+        return $this->app->make($class);
+    }
 }

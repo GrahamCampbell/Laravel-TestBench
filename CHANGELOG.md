@@ -7,6 +7,7 @@ CHANGE LOG
 * Upgrade to Laravel 4.2
 * Removed broken model test trait
 * Removed old hhvm reflection checks
+* Added a class injection assertion
 * Minor refactoring
 
 
