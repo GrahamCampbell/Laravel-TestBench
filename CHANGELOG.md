@@ -7,6 +7,7 @@ CHANGE LOG
 * Upgrade to Laravel 4.2
 * Removed broken model test trait
 * Removed old hhvm reflection checks
+* Minor refactoring
 
 
 ## V0.3.1 Alpha (20/05/2014)
