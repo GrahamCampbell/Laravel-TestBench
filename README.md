@@ -3,7 +3,7 @@ Laravel TestBench
 
 
 [![Build Status](https://img.shields.io/travis/GrahamCampbell/Laravel-TestBench/master.svg?style=flat)](https://travis-ci.org/GrahamCampbell/Laravel-TestBench)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-TestBench.svg?style=flat)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-TestBench.svg?style=flat)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/GrahamCampbell/Laravel-TestBench.svg?style=flat)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench)
 [![Software License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg?style=flat)](LICENSE.md)
 [![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench.svg?style=flat)](https://github.com/GrahamCampbell/Laravel-TestBench/releases)
@@ -11,7 +11,7 @@ Laravel TestBench
 
 ## Introduction
 
-Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 4.2](http://laravel.com). It relies on [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE.md), and [api docs](http://grahamcampbell.github.io/Laravel-TestBench).
+Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 4.2](http://laravel.com). It relies on [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE.md), [api docs](http://grahamcampbell.github.io/Laravel-TestBench), and [contribution guidelines](CONTRIBUTING.md).
 
 
 ## Installation
@@ -34,11 +34,6 @@ There is currently no usage documentation besides the [API Documentation](http:/
 ) for Laravel TestBench.
 
 You may see an example of implementation in pretty much all of my [Laravel](http://laravel.com) packages.
-
-
-## Contributing
-
-Before submitting a pull request, please check the contributing guidelines [here](CONTRIBUTING.md).
 
 
 ## License
