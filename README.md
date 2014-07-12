@@ -30,8 +30,7 @@ Laravel TestBench requires no configuration. Just follow the simple install inst
 
 ## Usage
 
-There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-TestBench
-) for Laravel TestBench.
+There is currently no usage documentation besides the [API Documentation](http://docs.grahamjcampbell.co.uk) for Laravel TestBench.
 
 You may see an example of implementation in pretty much all of my [Laravel](http://laravel.com) packages.
 
