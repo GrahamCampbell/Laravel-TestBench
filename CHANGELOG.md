@@ -5,9 +5,11 @@ CHANGE LOG
 ## V1.0 Beta 1 (Upcoming - July 2014)
 
 * Upgrade to Laravel 4.2
+* Simplified service provider tests
 * Removed broken model test trait
 * Removed old hhvm reflection checks
 * Added a class injection assertion
+* Added some proper unit tests
 * Minor refactoring
 
 

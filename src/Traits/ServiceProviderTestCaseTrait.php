@@ -36,16 +36,6 @@ trait ServiceProviderTestCaseTrait
      */
     abstract protected function getServiceProviderClass();
 
-    /**
-     * Get the service provider deferred status.
-     *
-     * @return bool
-     */
-    protected function getServiceProviderDeferred()
-    {
-        return false;
-    }
-
     public function testIsAServiceProvider()
     {
         $class = $this->getServiceProviderClass();
@@ -57,25 +47,6 @@ trait ServiceProviderTestCaseTrait
         $msg = "Expected class '$class' to be a service provider.";
 
         $this->assertTrue($reflection->isSubclassOf($serviceprovider), $msg);
-    }
-
-    public function testDeferred()
-    {
-        $class = $this->getServiceProviderClass();
-        $deferred = $this->getServiceProviderDeferred();
-
-        $reflection = new ReflectionClass($class);
-
-        $method = $reflection->getMethod("isDeferred");
-        $method->setAccessible(true);
-
-        if ($deferred) {
-            $msg = "Expected class '$class' to be deferred.";
-        } else {
-            $msg = "Expected class '$class' not to be deferred.";
-        }
-
-        $this->assertEquals($deferred, $method->invoke(new $class($this->app)), $msg);
     }
 
     public function testProvides()

@@ -16,6 +16,8 @@
 
 namespace GrahamCampbell\TestBench\Traits;
 
+use ReflectionClass;
+
 /**
  * This is the laravel test case trait.
  *
@@ -27,6 +29,22 @@ namespace GrahamCampbell\TestBench\Traits;
  */
 trait LaravelTestCaseTrait
 {
+    /**
+     * Are routing filters enabled?
+     *
+     * @return bool
+     */
+    protected function isFiltering()
+    {
+        $router = $this->app['router'];
+
+        $reflection = new ReflectionClass(get_class($router));
+        $property = $reflection->getProperty('filtering');
+        $property->setAccessible(true);
+
+        return $property->getValue($router);
+    }
+
     /**
      * Look for matches in the response DOM.
      *

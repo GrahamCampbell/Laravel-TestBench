@@ -16,6 +16,8 @@
 
 namespace GrahamCampbell\Tests\TestBench;
 
+use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\ServiceProvider;
 use GrahamCampbell\TestBench\AbstractLaravelTestCase;
 
 /**
@@ -37,5 +39,104 @@ abstract class AbstractTestCase extends AbstractLaravelTestCase
     protected function getBasePath()
     {
         return __DIR__.'/../src';
+    }
+
+    /**
+     * Get the service provider class.
+     *
+     * @return string
+     */
+    protected function getServiceProviderClass()
+    {
+        return 'GrahamCampbell\Tests\TestBench\ServiceProviderStub';
+    }
+}
+
+class ServiceProviderStub extends ServiceProvider
+{
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
+
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        //
+    }
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->bindShared('testbench.foostub', function ($app) {
+            return new FooStub('baz');
+        });
+
+        $this->app->alias('testbench.foostub', 'GrahamCampbell\Tests\TestBench\FooStub');
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return array(
+            'testbench.foostub'
+        );
+    }
+}
+
+class FooFacade extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'testbench.foostub';
+    }
+}
+
+class FooStub
+{
+    protected $bar;
+
+    public function __construct($bar)
+    {
+        $this->bar = $bar;
+    }
+
+    public function getBar()
+    {
+        return $this->bar;
+    }
+}
+
+class BarStub
+{
+    protected $foo;
+
+    public function __construct($foo)
+    {
+        $this->foo = $foo;
+    }
+
+    public function getFoo()
+    {
+        return $this->foo;
     }
 }
