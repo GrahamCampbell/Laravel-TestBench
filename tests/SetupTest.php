@@ -17,10 +17,9 @@
 namespace GrahamCampbell\Tests\TestBench;
 
 use GrahamCampbell\TestBench\AbstractLaravelTestCase;
-use GrahamCampbell\TestBench\Traits\ServiceProviderTestCaseTrait;
 
 /**
- * This is the alternate provider test class.
+ * This is the setup test class.
  *
  * @package    Laravel-TestBench
  * @author     Graham Campbell
@@ -28,7 +27,7 @@ use GrahamCampbell\TestBench\Traits\ServiceProviderTestCaseTrait;
  * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-TestBench
  */
-class AlternateProviderTest extends AbstractLaravelTestCase
+class SetupTest extends AbstractLaravelTestCase
 {
     /**
      * Get the application base path.

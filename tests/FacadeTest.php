@@ -16,7 +16,6 @@
 
 namespace GrahamCampbell\Tests\TestBench;
 
-use GrahamCampbell\Tests\TestBench\AbstractTestCase;
 use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
 
 /**
