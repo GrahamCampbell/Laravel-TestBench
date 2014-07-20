@@ -40,7 +40,7 @@ abstract class AbstractLaravelTestCase extends TestCase
      */
     protected function getApplicationPaths()
     {
-        $basePath = realpath(__DIR__.'/../fixture');
+        $basePath = realpath(__DIR__.'/fixture');
 
         return [
             'app'     => "{$basePath}/app",

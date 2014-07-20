@@ -30,16 +30,6 @@ use GrahamCampbell\TestBench\AbstractLaravelTestCase;
 class SetupTest extends AbstractLaravelTestCase
 {
     /**
-     * Get the application base path.
-     *
-     * @return string
-     */
-    protected function getBasePath()
-    {
-        return __DIR__.'/../src';
-    }
-
-    /**
      * Specify if routing filters are enabled.
      *
      * @return bool
