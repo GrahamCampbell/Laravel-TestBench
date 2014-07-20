@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V1.0 Beta 1 (Upcoming - July 2014)
+## V1.0 Beta 1 (20/07/2014)
 
 * Upgrade to Laravel 4.2
 * Simplified service provider tests
@@ -10,6 +10,7 @@ CHANGE LOG
 * Removed old hhvm reflection checks
 * Added a class injection assertion
 * Added some proper unit tests
+* Use our own fixture
 * Minor refactoring
 
 
