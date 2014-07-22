@@ -44,28 +44,13 @@ abstract class AbstractTestCase extends AbstractLaravelTestCase
 
 class ServiceProviderStub extends ServiceProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
     protected $defer = false;
 
-    /**
-     * Bootstrap the application events.
-     *
-     * @return void
-     */
     public function boot()
     {
         //
     }
 
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
     public function register()
     {
         $this->app->bindShared('testbench.foostub', function ($app) {
@@ -75,11 +60,6 @@ class ServiceProviderStub extends ServiceProvider
         $this->app->alias('testbench.foostub', 'GrahamCampbell\Tests\TestBench\FooStub');
     }
 
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
     public function provides()
     {
         return array(
@@ -90,11 +70,6 @@ class ServiceProviderStub extends ServiceProvider
 
 class FooFacade extends Facade
 {
-    /**
-     * Get the registered name of the component.
-     *
-     * @return string
-     */
     protected static function getFacadeAccessor()
     {
         return 'testbench.foostub';
