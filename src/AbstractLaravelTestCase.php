@@ -16,9 +16,9 @@
 
 namespace GrahamCampbell\TestBench;
 
-use Orchestra\Testbench\TestCase;
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
 use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
+use Orchestra\Testbench\TestCase;
 
 /**
  * This is the abstract laravel test case class.

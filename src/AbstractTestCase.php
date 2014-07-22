@@ -16,8 +16,8 @@
 
 namespace GrahamCampbell\TestBench;
 
-use PHPUnit_Framework_TestCase as TestCase;
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
+use PHPUnit_Framework_TestCase as TestCase;
 
 /**
  * This is the abstract test case class.

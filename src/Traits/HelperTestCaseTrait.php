@@ -80,7 +80,6 @@ trait HelperTestCaseTrait
      *
      * @param  mixed   $needle
      * @param  array   $haystack
-     * @param  bool    $strict
      * @param  string  $msg
      * @return void
      */

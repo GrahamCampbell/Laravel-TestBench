@@ -48,6 +48,8 @@ trait LaravelTestCaseTrait
     /**
      * Look for matches in the response DOM.
      *
+     * @param  string  $text
+     * @param  string  $element
      * @return \Symfony\Component\DomCrawler\Crawler
      */
     protected function getMatches($text, $element)
