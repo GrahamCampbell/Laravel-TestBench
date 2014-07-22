@@ -83,13 +83,13 @@ trait HelperTestCaseTrait
      * @param  string  $msg
      * @return void
      */
-    protected function assertInArray($needle, $haystack, $msg = '')
+    public static function assertInArray($needle, $haystack, $msg = '')
     {
         if ($msg == '') {
             $msg = "Expected the array to contain the element '$needle'.";
         }
 
-        $this->assertTrue(in_array($needle, $haystack, true), $msg);
+        static::assertTrue(in_array($needle, $haystack, true), $msg);
     }
 
     /**
@@ -100,12 +100,12 @@ trait HelperTestCaseTrait
      * @param  string  $msg
      * @return void
      */
-    protected function assertMethodExists($method, $class, $msg = '')
+    public static function assertMethodExists($method, $class, $msg = '')
     {
         if ($msg == '') {
             $msg = "Expected the class '$class' to have method '$method'.";
         }
 
-        $this->assertTrue(method_exists($class, $method), $msg);
+        static::assertTrue(method_exists($class, $method), $msg);
     }
 }

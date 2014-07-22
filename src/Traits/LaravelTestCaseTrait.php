@@ -67,7 +67,7 @@ trait LaravelTestCaseTrait
      * @param  int|null  $times
      * @return void
      */
-    protected function assertSee($text, $element = 'body', $times = null)
+    public function assertSee($text, $element = 'body', $times = null)
     {
         $matches = count($this->getMatches($text, $element));
 
@@ -87,7 +87,7 @@ trait LaravelTestCaseTrait
      * @param  string  $element
      * @return void
      */
-    protected function assertNotSee($text, $element = 'body')
+    public function assertNotSee($text, $element = 'body')
     {
         return $this->assertSee($text, $element, 0);
     }
@@ -98,7 +98,7 @@ trait LaravelTestCaseTrait
      * @param  string  $name
      * @return void
      */
-    protected function assertIsInjectable($name)
+    public function assertIsInjectable($name)
     {
         $injectable = true;
 
