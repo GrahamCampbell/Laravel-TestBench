@@ -73,7 +73,7 @@ trait FacadeTestCaseTrait
         $accessor = $this->getFacadeAccessor();
         $class = $this->getFacadeClass();
         $reflection = new ReflectionClass($class);
-        $method = $reflection->getMethod("getFacadeAccessor");
+        $method = $reflection->getMethod('getFacadeAccessor');
         $method->setAccessible(true);
 
         $msg = "Expected class '$class' to have an accessor of '$accessor'.";
@@ -86,7 +86,7 @@ trait FacadeTestCaseTrait
         $root = $this->getFacadeRoot();
         $class = $this->getFacadeClass();
         $reflection = new ReflectionClass($class);
-        $method = $reflection->getMethod("getFacadeRoot");
+        $method = $reflection->getMethod('getFacadeRoot');
         $method->setAccessible(true);
 
         $msg = "Expected class '$class' to have a root of '$root'.";
@@ -101,7 +101,7 @@ trait FacadeTestCaseTrait
 
         if ($provider) {
             $reflection = new ReflectionClass($provider);
-            $method = $reflection->getMethod("provides");
+            $method = $reflection->getMethod('provides');
             $method->setAccessible(true);
 
             $msg = "Expected class '$provider' to provide '$accessor'.";

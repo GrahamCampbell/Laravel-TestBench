@@ -54,7 +54,7 @@ trait ServiceProviderTestCaseTrait
         $class = $this->getServiceProviderClass();
         $reflection = new ReflectionClass($class);
 
-        $method = $reflection->getMethod("provides");
+        $method = $reflection->getMethod('provides');
         $method->setAccessible(true);
 
         $msg = "Expected class '$class' to provide a valid list of services.";
