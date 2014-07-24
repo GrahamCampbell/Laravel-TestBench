@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V1.0 RC 1 (Upcoming - August 2014)
+
+* Minor fixes and tweaks
+
+
 ## V1.0 Beta 1 (20/07/2014)
 
 * Upgrade to Laravel 4.2
