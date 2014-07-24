@@ -69,7 +69,7 @@ trait LaravelTestCaseTrait
      */
     public function assertSee($text, $element = 'body', $times = null)
     {
-        $matches = count($this->getMatches($text, $element));
+        $matches = $this->getMatches($text, $element)->count();
 
         if (is_int($times)) {
             $msg = "Expected to see '$text' within a '$element' $times times, but counted $matches occurrences.";
