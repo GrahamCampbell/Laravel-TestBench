@@ -21,11 +21,9 @@ use GrahamCampbell\TestBench\AbstractLaravelTestCase;
 /**
  * This is the setup test class.
  *
- * @package    Laravel-TestBench
- * @author     Graham Campbell
- * @copyright  Copyright 2013-2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-TestBench
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2013-2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md> Apache 2.0
  */
 class SetupTest extends AbstractLaravelTestCase
 {
@@ -42,7 +40,7 @@ class SetupTest extends AbstractLaravelTestCase
     /**
      * Get the required service providers.
      *
-     * @return array
+     * @return string[]
      */
     protected function getRequiredServiceProviders()
     {

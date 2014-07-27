@@ -23,11 +23,9 @@ use Orchestra\Testbench\TestCase;
 /**
  * This is the abstract laravel test case class.
  *
- * @package    Laravel-TestBench
- * @author     Graham Campbell
- * @copyright  Copyright 2013-2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-TestBench
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2013-2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md> Apache 2.0
  */
 abstract class AbstractLaravelTestCase extends TestCase
 {
@@ -36,24 +34,25 @@ abstract class AbstractLaravelTestCase extends TestCase
     /**
      * Get application paths.
      *
-     * @return array
+     * @return string[]
      */
     protected function getApplicationPaths()
     {
         $basePath = realpath(__DIR__.'/fixture');
 
-        return [
+        return array(
             'app'     => "{$basePath}/app",
             'public'  => "{$basePath}/public",
             'base'    => $basePath,
             'storage' => "{$basePath}/app/storage",
-        ];
+        );
     }
 
     /**
      * Setup the application environment.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param \Illuminate\Foundation\Application $app
+     *
      * @return void
      */
     protected function getEnvironmentSetUp($app)
@@ -78,7 +77,8 @@ abstract class AbstractLaravelTestCase extends TestCase
     /**
      * Additional application environment setup.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param \Illuminate\Foundation\Application $app
+     *
      * @return void
      */
     protected function additionalSetup($app)
@@ -89,7 +89,7 @@ abstract class AbstractLaravelTestCase extends TestCase
     /**
      * Get the package service providers.
      *
-     * @return array
+     * @return string[]
      */
     protected function getPackageProviders()
     {
@@ -105,7 +105,7 @@ abstract class AbstractLaravelTestCase extends TestCase
     /**
      * Get the required service providers.
      *
-     * @return array
+     * @return string[]
      */
     protected function getRequiredServiceProviders()
     {

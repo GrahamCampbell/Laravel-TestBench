@@ -21,11 +21,9 @@ use ReflectionClass;
 /**
  * This is the laravel test case trait.
  *
- * @package    Laravel-TestBench
- * @author     Graham Campbell
- * @copyright  Copyright 2013-2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-TestBench
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2013-2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md> Apache 2.0
  */
 trait LaravelTestCaseTrait
 {
@@ -48,8 +46,9 @@ trait LaravelTestCaseTrait
     /**
      * Look for matches in the response DOM.
      *
-     * @param  string  $text
-     * @param  string  $element
+     * @param string $text
+     * @param string $element
+     *
      * @return \Symfony\Component\DomCrawler\Crawler
      */
     protected function getMatches($text, $element)
@@ -62,9 +61,10 @@ trait LaravelTestCaseTrait
     /**
      * Assert that the text is in the specified element.
      *
-     * @param  string    $text
-     * @param  string    $element
-     * @param  int|null  $times
+     * @param string   $text
+     * @param string   $element
+     * @param int|null $times
+     *
      * @return void
      */
     public function assertSee($text, $element = 'body', $times = null)
@@ -83,8 +83,9 @@ trait LaravelTestCaseTrait
     /**
      * Assert that the text is not in the specified element.
      *
-     * @param  string  $text
-     * @param  string  $element
+     * @param string $text
+     * @param string $element
+     *
      * @return void
      */
     public function assertNotSee($text, $element = 'body')
@@ -95,7 +96,8 @@ trait LaravelTestCaseTrait
     /**
      * Assert that a class can be automatically injected.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return void
      */
     public function assertIsInjectable($name)
@@ -115,7 +117,8 @@ trait LaravelTestCaseTrait
     /**
      * Register and make a stub class to inject into.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return mixed
      */
     protected function makeInjectableClass($name)

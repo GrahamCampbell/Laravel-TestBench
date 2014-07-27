@@ -21,11 +21,9 @@ use Mockery;
 /**
  * This is the helper test case trait.
  *
- * @package    Laravel-TestBench
- * @author     Graham Campbell
- * @copyright  Copyright 2013-2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md
- * @link       https://github.com/GrahamCampbell/Laravel-TestBench
+ * @author    Graham Campbell <graham@mineuk.com>
+ * @copyright 2013-2014 Graham Campbell
+ * @license   <https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md> Apache 2.0
  */
 trait HelperTestCaseTrait
 {
@@ -78,9 +76,10 @@ trait HelperTestCaseTrait
     /**
      * Assert that the element exists in the array.
      *
-     * @param  mixed   $needle
-     * @param  array   $haystack
-     * @param  string  $msg
+     * @param mixed  $needle
+     * @param array  $haystack
+     * @param string $msg
+     *
      * @return void
      */
     public static function assertInArray($needle, $haystack, $msg = '')
@@ -95,9 +94,10 @@ trait HelperTestCaseTrait
     /**
      * Assert that the specified method exists on the class.
      *
-     * @param  string  $method
-     * @param  string  $class
-     * @param  string  $msg
+     * @param string $method
+     * @param string $class
+     * @param string $msg
+     *
      * @return void
      */
     public static function assertMethodExists($method, $class, $msg = '')
