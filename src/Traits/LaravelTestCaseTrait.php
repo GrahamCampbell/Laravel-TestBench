@@ -119,7 +119,7 @@ trait LaravelTestCaseTrait
      *
      * @param string $name
      *
-     * @return mixed
+     * @return object
      */
     protected function makeInjectableClass($name)
     {

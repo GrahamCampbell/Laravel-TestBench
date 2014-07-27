@@ -115,10 +115,10 @@ abstract class AbstractLaravelTestCase extends TestCase
     /**
      * Get the service provider class.
      *
-     * @return string
+     * @return void
      */
     protected function getServiceProviderClass()
     {
-        return null;
+        // no service provider required
     }
 }
