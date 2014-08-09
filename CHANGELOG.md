@@ -2,6 +2,12 @@ CHANGE LOG
 ==========
 
 
+## V1.0 RC 1 (09/08/2014)
+
+* Made the getServiceProviderClass function clearer
+* Corrected the license comments
+
+
 ## V1.0 Beta 2 (27/07/2014)
 
 * Minor fixes and tweaks
