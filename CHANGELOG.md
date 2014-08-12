@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V1.0 (12/08/2014)
+
+* Bumped to stable
+
+
 ## V1.0 RC 1 (09/08/2014)
 
 * Made the getServiceProviderClass function clearer
