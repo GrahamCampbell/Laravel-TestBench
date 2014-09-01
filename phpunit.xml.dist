@@ -7,21 +7,22 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
+         stopOnError="false"
          stopOnFailure="false"
          syntaxCheck="true"
+         strict="true"
+         verbose="true">
 >
     <testsuites>
-        <testsuite name="Package Test Suite">
-            <directory suffix=".php">./tests</directory>
+        <testsuite name="Laravel TestBench Test Suite">
+            <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
     <filter>
-        <whitelist addUncoveredFilesFromWhitelist="true">
+        <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./src</directory>
             <exclude>
                 <directory>./src/fixture</directory>
-                <directory>./tests</directory>
-                <directory>./vendor</directory>
             </exclude>
         </whitelist>
     </filter>
