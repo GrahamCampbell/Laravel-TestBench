@@ -73,7 +73,7 @@ trait LaravelTestCaseTrait
 
         if (is_int($times)) {
             $msg = "Expected to see '$text' within a '$element' $times times, but counted $matches occurrences.";
-            $this->assertEquals($times, $matches, $msg);
+            $this->assertSame($times, $matches, $msg);
         } else {
             $msg = "Expected to see '$text' within a '$element' at least once, but counted $matches occurrences.";
             $this->assertGreaterThan(0, $matches, $msg);

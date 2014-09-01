@@ -76,7 +76,7 @@ trait FacadeTestCaseTrait
 
         $msg = "Expected class '$class' to have an accessor of '$accessor'.";
 
-        $this->assertEquals($accessor, $method->invoke(null), $msg);
+        $this->assertSame($accessor, $method->invoke(null), $msg);
     }
 
     public function testFacadeRoot()

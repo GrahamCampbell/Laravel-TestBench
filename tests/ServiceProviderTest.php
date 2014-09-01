@@ -58,6 +58,6 @@ class ServiceProviderTest extends AbstractTestCase
     public function testFooStub()
     {
         $result = $this->app->make('GrahamCampbell\Tests\TestBench\FooStub')->getBar();
-        $this->assertEquals('baz', $result);
+        $this->assertSame('baz', $result);
     }
 }
