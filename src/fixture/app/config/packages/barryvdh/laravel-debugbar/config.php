@@ -96,7 +96,8 @@ return array(
         'logs'            => false, // Add the latest log messages
         'files'           => false, // Show the included files
         'config'          => false, // Display config settings
-        'auth'            => false  // Display Laravel authentication status
+        'auth'            => false, // Display Laravel authentication status
+        'session'         => false  // Display session data in a separate tab
     ),
 
     /*
@@ -114,7 +115,8 @@ return array(
         ),
         'db' => array(
             'with_params' => true,  // Render SQL with the parameters substituted
-            'timeline'    => false  // Add the queries to the timeline
+            'timeline'    => false, // Add the queries to the timeline
+            'backtrace'   => false  // EXPERIMENTAL: Use a backtrace to find the origin of the query
         ),
         'mail' => array(
             'full_log' => false
