@@ -2,6 +2,14 @@ CHANGE LOG
 ==========
 
 
+## V1.1 (03/09/2014)
+
+* Improved the test suite
+* Raised some composer min requirements
+* Synced the debugbar configuration
+* Synced the fixture with laravel/laravel
+
+
 ## V1.0 (12/08/2014)
 
 * Bumped to stable
