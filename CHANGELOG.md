@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V1.1.1 (14/09/2014)
+
+* Very minor tweaks
+
+
 ## V1.1 (03/09/2014)
 
 * Improved the test suite
