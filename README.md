@@ -9,9 +9,9 @@ Laravel TestBench
 [![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench.svg?style=flat-square)](https://github.com/GrahamCampbell/Laravel-TestBench/releases)
 
 
-#### Looking for a laravel 5 compatable version?
+### Looking for a laravel 5 compatable version?
 
-**Checkout the [laravel5](https://github.com/GrahamCampbell/Laravel-TestBench/tree/laravel5) branch, installable by requiring `"graham-campbell/testbench": "~2.0"`**.
+Checkout the [laravel5](https://github.com/GrahamCampbell/Laravel-TestBench/tree/laravel5) branch, installable by requiring `"graham-campbell/testbench": "~2.0"`.
 
 
 ## Introduction
