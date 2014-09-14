@@ -9,14 +9,14 @@ Laravel TestBench
 [![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench.svg?style=flat-square)](https://github.com/GrahamCampbell/Laravel-TestBench/releases)
 
 
-### Looking for a laravel 5 compatable version?
+### Looking for a laravel 4 compatable version?
 
-Checkout the [master](https://github.com/GrahamCampbell/Laravel-TestBench/tree/master) branch, installable by requiring `"graham-campbell/testbench": "~2.0"`.
+Checkout the [master](https://github.com/GrahamCampbell/Laravel-TestBench) branch, installable by requiring `"graham-campbell/testbench": "~1.0"`.
 
 
 ## Introduction
 
-Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 4.2](http://laravel.com). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 5.0](http://laravel.com). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
 
 
 ## Installation

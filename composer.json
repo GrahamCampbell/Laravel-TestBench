@@ -1,6 +1,6 @@
 {
     "name": "graham-campbell/testbench",
-    "description": "TestBench Provides Some Testing Functionality For Laravel 4.2",
+    "description": "TestBench Provides Some Testing Functionality For Laravel 5.0",
     "keywords": ["laravel", "framework", "test", "bench", "testbench", "TestBench", "Laravel TestBench", "Laravel-TestBench", "Graham Campbell", "GrahamCampbell"],
     "license": "Apache-2.0",
     "authors": [
@@ -11,13 +11,13 @@
     ],
     "require": {
         "php": ">=5.4.7",
-        "laravel/framework": "4.2.*",
-        "symfony/config": "2.5.*",
-        "symfony/event-dispatcher": "2.5.*",
-        "symfony/filesystem": "2.5.*",
-        "symfony/stopwatch": "2.5.*",
-        "symfony/yaml": "2.5.*",
-        "orchestra/testbench": "2.2.*",
+        "laravel/framework": "5.0.*",
+        "symfony/config": "2.6.*",
+        "symfony/event-dispatcher": "2.6.*",
+        "symfony/filesystem": "2.6.*",
+        "symfony/stopwatch": "2.6.*",
+        "symfony/yaml": "2.6.*",
+        "orchestra/testbench": "3.0.*",
         "mockery/mockery": "~0.9.2",
         "phpunit/phpunit": "~4.2"
     },
@@ -33,7 +33,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-laravel5": "2.0-dev"
         }
     },
     "minimum-stability": "dev",

@@ -32,31 +32,27 @@ abstract class AbstractLaravelTestCase extends TestCase
     use HelperTestCaseTrait, LaravelTestCaseTrait;
 
     /**
-     * Get application paths.
-     *
-     * @return string[]
-     */
-    protected function getApplicationPaths()
-    {
-        $basePath = realpath(__DIR__.'/fixture');
-
-        return array(
-            'app'     => "{$basePath}/app",
-            'public'  => "{$basePath}/public",
-            'base'    => $basePath,
-            'storage' => "{$basePath}/app/storage",
-        );
-    }
-
-    /**
      * Setup the application environment.
      *
-     * @param \Illuminate\Foundation\Application $app
+     * @param \Illuminate\Contracts\Foundation\Application $app
      *
      * @return void
      */
     protected function getEnvironmentSetUp($app)
     {
+        $app['config']->set('cache.driver', 'array');
+
+        $app['config']->set('database.default', 'sqlite');
+        $app['config']->set('database.connections.sqlite', array(
+            'driver' => 'sqlite',
+            'database' => ':memory:',
+            'prefix' => ''
+        ));
+
+        $app['config']->set('mail.drive', 'log');
+
+        $app['config']->set('session.driver', 'array');
+
         if ($this->enableFilters()) {
             $app['router']->enableFilters();
         }
@@ -77,7 +73,7 @@ abstract class AbstractLaravelTestCase extends TestCase
     /**
      * Additional application environment setup.
      *
-     * @param \Illuminate\Foundation\Application $app
+     * @param \Illuminate\Contracts\Foundation\Application $app
      *
      * @return void
      */
