@@ -40,8 +40,6 @@ abstract class AbstractLaravelTestCase extends TestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['path.base'] = realpath($this->getBasePath());
-
         $app['config']->set('cache.driver', 'array');
 
         $app['config']->set('database.default', 'sqlite');
