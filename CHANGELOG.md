@@ -2,6 +2,12 @@ CHANGE LOG
 ==========
 
 
+## V2.0 (Upcoming)
+
+* Upgrade to Laravel 5.0
+* Switch back to using the orchestral fixture
+
+
 ## V1.1 (03/09/2014)
 
 * Improved the test suite
