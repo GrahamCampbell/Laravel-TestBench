@@ -11,7 +11,7 @@ Laravel TestBench
 
 ### Looking for a laravel 4 compatable version?
 
-Checkout the [master](https://github.com/GrahamCampbell/Laravel-TestBench) branch, installable by requiring `"graham-campbell/testbench": "~1.0"`.
+Checkout the [1.1 branch](https://github.com/GrahamCampbell/Laravel-TestBench/tree/1.1), installable by requiring `"graham-campbell/testbench": "~1.0"`.
 
 
 ## Introduction
