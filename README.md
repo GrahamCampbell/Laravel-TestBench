@@ -11,7 +11,7 @@ Laravel TestBench
 
 ### Looking for a laravel 5 compatable version?
 
-Checkout the [master](https://github.com/GrahamCampbell/Laravel-TestBench/tree/master) branch, installable by requiring `"graham-campbell/testbench": "~2.0"`.
+Checkout the [master branch](https://github.com/GrahamCampbell/Laravel-TestBench/tree/master), installable by requiring `"graham-campbell/testbench": "~2.0"`.
 
 
 ## Introduction
