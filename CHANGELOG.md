@@ -8,6 +8,11 @@ CHANGE LOG
 * Switch back to using the orchestral fixture
 
 
+## V1.1.2 (18/09/2014)
+
+* Count mockery assertions
+
+
 ## V1.1.1 (14/09/2014)
 
 * Very minor tweaks
