@@ -78,6 +78,6 @@ return array(
     |
     */
 
-    'description' => 'Platform is a fork of Laravel with some extra goodies.'
+    'description' => 'Platform is a fork of Laravel with some extra goodies.',
 
 );

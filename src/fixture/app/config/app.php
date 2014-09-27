@@ -107,6 +107,6 @@ return array(
     |
     */
 
-    'manifest' => storage_path().'/meta'
+    'manifest' => storage_path().'/meta',
 
 );

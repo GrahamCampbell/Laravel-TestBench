@@ -27,6 +27,6 @@ return array(
     |
     */
 
-    'view' => 'graham-campbell/navigation::bootstrap'
+    'view' => 'graham-campbell/navigation::bootstrap',
 
 );
