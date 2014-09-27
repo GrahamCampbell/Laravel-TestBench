@@ -8,6 +8,12 @@ CHANGE LOG
 * Switch back to using the orchestral fixture
 
 
+## V1.1.3 (27/09/2014)
+
+* Added cs fixers to the test suite
+* Improved the docs
+
+
 ## V1.1.2 (18/09/2014)
 
 * Count mockery assertions

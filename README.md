@@ -1,22 +1,17 @@
 Laravel TestBench
 =================
 
-
-[![Build Status](https://img.shields.io/travis/GrahamCampbell/Laravel-TestBench/master.svg?style=flat-square)](https://travis-ci.org/GrahamCampbell/Laravel-TestBench)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-TestBench.svg?style=flat-square)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/GrahamCampbell/Laravel-TestBench.svg?style=flat-square)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench)
-[![Software License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Latest Version](https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench.svg?style=flat-square)](https://github.com/GrahamCampbell/Laravel-TestBench/releases)
-
-
-### Looking for a laravel 4 compatable version?
-
-Checkout the [1.1 branch](https://github.com/GrahamCampbell/Laravel-TestBench/tree/1.1), installable by requiring `"graham-campbell/testbench": "~1.0"`.
-
-
-## Introduction
-
 Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 5.0](http://laravel.com). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+
+![Laravel TestBench](https://cloud.githubusercontent.com/assets/2829600/4432280/a961ad84-468c-11e4-9911-d5ae8c926a1b.PNG)
+
+<p align="center">
+<a href="https://travis-ci.org/GrahamCampbell/Laravel-TestBench"><img src="https://img.shields.io/travis/GrahamCampbell/Laravel-TestBench/master.svg?style=flat-square" alt="Build Status"></img></a>
+<a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-TestBench.svg?style=flat-square" alt="Coverage Status"></img></a>
+<a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench"><img src="https://img.shields.io/scrutinizer/g/GrahamCampbell/Laravel-TestBench.svg?style=flat-square" alt="Quality Score"></img></a>
+<a href="LICENSE.md"><img src="https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
+<a href="https://github.com/GrahamCampbell/Laravel-TestBench/releases"><img src="https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench.svg?style=flat-square" alt="Latest Version"></img></a>
+</p>
 
 
 ## Installation
@@ -26,6 +21,10 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 To get the latest version of Laravel TestBench, simply require `"graham-campbell/testbench": "~2.0"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
 Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
+
+#### Looking for a laravel 4 compatable version?
+
+Checkout the [1.1 branch](https://github.com/GrahamCampbell/Laravel-TestBench/tree/1.1), installable by requiring `"graham-campbell/testbench": "~1.0"`.
 
 
 ## Configuration

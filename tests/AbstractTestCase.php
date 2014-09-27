@@ -16,9 +16,9 @@
 
 namespace GrahamCampbell\Tests\TestBench;
 
+use GrahamCampbell\TestBench\AbstractLaravelTestCase;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
-use GrahamCampbell\TestBench\AbstractLaravelTestCase;
 
 /**
  * This is the abstract test case class.
@@ -61,7 +61,7 @@ class ServiceProviderStub extends ServiceProvider
     public function provides()
     {
         return array(
-            'testbench.foostub'
+            'testbench.foostub',
         );
     }
 }
