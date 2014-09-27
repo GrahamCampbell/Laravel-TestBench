@@ -3,7 +3,7 @@ Laravel TestBench
 
 Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 5.0](http://laravel.com). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
 
-![Laravel TestBench](https://cloud.githubusercontent.com/assets/2829600/4432280/a961ad84-468c-11e4-9911-d5ae8c926a1b.PNG)
+![Laravel TestBench](https://cloud.githubusercontent.com/assets/2829600/4432286/a990a15c-468c-11e4-8bbe-abcb168cdc3f.PNG)
 
 <p align="center">
 <a href="https://travis-ci.org/GrahamCampbell/Laravel-TestBench"><img src="https://img.shields.io/travis/GrahamCampbell/Laravel-TestBench/master.svg?style=flat-square" alt="Build Status"></img></a>
