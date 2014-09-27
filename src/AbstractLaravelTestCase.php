@@ -46,7 +46,7 @@ abstract class AbstractLaravelTestCase extends TestCase
         $app['config']->set('database.connections.sqlite', array(
             'driver' => 'sqlite',
             'database' => ':memory:',
-            'prefix' => ''
+            'prefix' => '',
         ));
 
         $app['config']->set('mail.drive', 'log');
