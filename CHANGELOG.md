@@ -8,6 +8,12 @@ CHANGE LOG
 * Switch back to using the orchestral fixture
 
 
+## V1.1.4 (04/10/2014)
+
+* Removed a file from the dist
+* Updated some version constraints
+
+
 ## V1.1.3 (27/09/2014)
 
 * Added cs fixers to the test suite
