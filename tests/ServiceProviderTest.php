@@ -29,11 +29,6 @@ class ServiceProviderTest extends AbstractTestCase
 {
     use ServiceProviderTestCaseTrait;
 
-    public function testFilters()
-    {
-        $this->assertFalse($this->isFiltering(), 'Expected filtering to be disabled.');
-    }
-
     public function testFooStubIsInjectable()
     {
         $this->assertIsInjectable('GrahamCampbell\Tests\TestBench\FooStub');

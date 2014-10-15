@@ -53,21 +53,7 @@ abstract class AbstractLaravelTestCase extends TestCase
 
         $app['config']->set('session.driver', 'array');
 
-        if ($this->enableFilters()) {
-            $app['router']->enableFilters();
-        }
-
         $this->additionalSetup($app);
-    }
-
-    /**
-     * Specify if routing filters are enabled.
-     *
-     * @return bool
-     */
-    protected function enableFilters()
-    {
-        return false;
     }
 
     /**

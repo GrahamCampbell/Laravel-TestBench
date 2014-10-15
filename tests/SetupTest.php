@@ -28,16 +28,6 @@ use GrahamCampbell\TestBench\AbstractLaravelTestCase;
 class SetupTest extends AbstractLaravelTestCase
 {
     /**
-     * Specify if routing filters are enabled.
-     *
-     * @return bool
-     */
-    protected function enableFilters()
-    {
-        return true;
-    }
-
-    /**
      * Get the required service providers.
      *
      * @return string[]
@@ -45,10 +35,5 @@ class SetupTest extends AbstractLaravelTestCase
     protected function getRequiredServiceProviders()
     {
         return array();
-    }
-
-    public function testFilters()
-    {
-        $this->assertTrue($this->isFiltering(), 'Expected filtering to be enabled.');
     }
 }
