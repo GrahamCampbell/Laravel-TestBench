@@ -16,6 +16,7 @@
 
 namespace GrahamCampbell\TestBench;
 
+use Illuminate\Contracts\Foundation\Application;
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
 use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
 use Orchestra\Testbench\TestCase;
@@ -63,7 +64,7 @@ abstract class AbstractLaravelTestCase extends TestCase
      *
      * @return void
      */
-    protected function additionalSetup($app)
+    protected function additionalSetup(Application $app)
     {
         //
     }
