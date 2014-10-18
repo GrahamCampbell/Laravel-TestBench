@@ -16,9 +16,9 @@
 
 namespace GrahamCampbell\TestBench;
 
-use Illuminate\Contracts\Foundation\Application;
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
 use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
+use Illuminate\Contracts\Foundation\Application;
 use Orchestra\Testbench\TestCase;
 
 /**
