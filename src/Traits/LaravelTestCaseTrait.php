@@ -26,56 +26,6 @@ namespace GrahamCampbell\TestBench\Traits;
 trait LaravelTestCaseTrait
 {
     /**
-     * Look for matches in the response DOM.
-     *
-     * @param string $text
-     * @param string $element
-     *
-     * @return \Symfony\Component\DomCrawler\Crawler
-     */
-    protected function getMatches($text, $element)
-    {
-        $crawler = $this->client->getCrawler();
-
-        return $crawler->filter("{$element}:contains('{$text}')");
-    }
-
-    /**
-     * Assert that the text is in the specified element.
-     *
-     * @param string   $text
-     * @param string   $element
-     * @param int|null $times
-     *
-     * @return void
-     */
-    public function assertSee($text, $element = 'body', $times = null)
-    {
-        $matches = $this->getMatches($text, $element)->count();
-
-        if (is_int($times)) {
-            $msg = "Expected to see '$text' within a '$element' $times times, but counted $matches occurrences.";
-            $this->assertSame($times, $matches, $msg);
-        } else {
-            $msg = "Expected to see '$text' within a '$element' at least once, but counted $matches occurrences.";
-            $this->assertGreaterThan(0, $matches, $msg);
-        }
-    }
-
-    /**
-     * Assert that the text is not in the specified element.
-     *
-     * @param string $text
-     * @param string $element
-     *
-     * @return void
-     */
-    public function assertNotSee($text, $element = 'body')
-    {
-        return $this->assertSee($text, $element, 0);
-    }
-
-    /**
      * Assert that a class can be automatically injected.
      *
      * @param string $name
