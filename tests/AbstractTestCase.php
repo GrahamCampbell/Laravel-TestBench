@@ -51,7 +51,7 @@ class ServiceProviderStub extends ServiceProvider
 
     public function register()
     {
-        $this->app->bindShared('testbench.foostub', function ($app) {
+        $this->app->singleton('testbench.foostub', function ($app) {
             return new FooStub('baz');
         });
 
