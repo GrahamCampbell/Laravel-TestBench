@@ -44,11 +44,11 @@ abstract class AbstractLaravelTestCase extends TestCase
         $app['config']->set('cache.driver', 'array');
 
         $app['config']->set('database.default', 'sqlite');
-        $app['config']->set('database.connections.sqlite', array(
+        $app['config']->set('database.connections.sqlite', [
             'driver' => 'sqlite',
             'database' => ':memory:',
             'prefix' => '',
-        ));
+        ]);
 
         $app['config']->set('mail.drive', 'log');
 
@@ -79,7 +79,7 @@ abstract class AbstractLaravelTestCase extends TestCase
         $provider = $this->getServiceProviderClass();
 
         if ($provider) {
-            return array_merge($this->getRequiredServiceProviders(), array($provider));
+            return array_merge($this->getRequiredServiceProviders(), [$provider]);
         }
 
         return $this->getRequiredServiceProviders();
@@ -92,7 +92,7 @@ abstract class AbstractLaravelTestCase extends TestCase
      */
     protected function getRequiredServiceProviders()
     {
-        return array();
+        return [];
     }
 
     /**

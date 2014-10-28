@@ -29,7 +29,7 @@ class HelpersTest extends AbstractTestBenchTestCase
 {
     public function testInArray()
     {
-        $this->assertInArray('foo', array('foo'));
+        $this->assertInArray('foo', ['foo']);
     }
 
     /**
@@ -37,7 +37,7 @@ class HelpersTest extends AbstractTestBenchTestCase
      */
     public function testNotInArray()
     {
-        $this->assertInArray('foo', array('bar'));
+        $this->assertInArray('foo', ['bar']);
     }
 
     public function testMethodDoesExist()
