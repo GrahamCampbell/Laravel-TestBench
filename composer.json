@@ -9,6 +9,12 @@
             "email": "graham@mineuk.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/GrahamCampbell/testbench"
+        }
+    ],
     "require": {
         "php": ">=5.4.7",
         "laravel/framework": "5.0.*",
@@ -18,7 +24,7 @@
         "symfony/filesystem": "2.6.*",
         "symfony/stopwatch": "2.6.*",
         "symfony/yaml": "2.6.*",
-        "orchestra/testbench": "3.0.*",
+        "orchestra/testbench": "dev-fix-logging as 3.0.x-dev",
         "fabpot/php-cs-fixer": "~1.0",
         "squizlabs/php_codesniffer": "~1.5",
         "mockery/mockery": "~0.9.2",
