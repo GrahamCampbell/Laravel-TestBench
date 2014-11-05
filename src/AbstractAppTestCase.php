@@ -16,11 +16,11 @@
 
 namespace GrahamCampbell\TestBench;
 
-use ReflectionClass;
-use RuntimeException;
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
 use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
 use Orchestra\Testbench\TestCase;
+use ReflectionClass;
+use RuntimeException;
 
 /**
  * This is the abstract app test case class.
@@ -63,7 +63,7 @@ abstract class AbstractAppTestCase extends TestCase
         $path = $parents[$pos]->getFileName();
 
         // return the filepath one up from the folder the selected class is saved in
-        return realpath(dirname($path).'/../')
+        return realpath(dirname($path).'/../');
     }
 
     /**
