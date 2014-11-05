@@ -51,9 +51,11 @@ trait FacadeTestCaseTrait
     /**
      * Get the service provider class.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string
      */
-    abstract protected function getServiceProviderClass();
+    abstract protected function getServiceProviderClass($app);
 
     public function testIsAFacade()
     {
@@ -95,7 +97,7 @@ trait FacadeTestCaseTrait
     public function testServiceProvider()
     {
         $accessor = $this->getFacadeAccessor();
-        $provider = $this->getServiceProviderClass();
+        $provider = $this->getServiceProviderClass($this->app);
 
         if ($provider) {
             $reflection = new ReflectionClass($provider);

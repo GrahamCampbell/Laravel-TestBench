@@ -30,13 +30,15 @@ trait ServiceProviderTestCaseTrait
     /**
      * Get the service provider class.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string
      */
-    abstract protected function getServiceProviderClass();
+    abstract protected function getServiceProviderClass($app);
 
     public function testIsAServiceProvider()
     {
-        $class = $this->getServiceProviderClass();
+        $class = $this->getServiceProviderClass($this->app);
 
         $reflection = new ReflectionClass($class);
 
@@ -49,7 +51,7 @@ trait ServiceProviderTestCaseTrait
 
     public function testProvides()
     {
-        $class = $this->getServiceProviderClass();
+        $class = $this->getServiceProviderClass($this->app);
         $reflection = new ReflectionClass($class);
 
         $method = $reflection->getMethod('provides');
