@@ -53,14 +53,17 @@ abstract class AbstractAppTestCase extends TestCase
         // we want to select the penultimate class from the list of parents
         // this is because the class directly extending this must be the
         // abstract test case the user has used in their app
-        $pos = count($parents) - 2;
+        $pos = count($parents) - 5;
 
         if ($pos < 0) {
             throw new RuntimeException('The base path could not be automatically determined.');
         }
 
+        // get the reflection class for the selected class
+        $selected = new ReflectionClass($parents[$pos]);
+
         // get the filepath of the selected class
-        $path = $parents[$pos]->getFileName();
+        $path = $selected->getFileName();
 
         // return the filepath one up from the folder the selected class is saved in
         return realpath(dirname($path).'/../');
