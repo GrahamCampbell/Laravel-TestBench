@@ -71,25 +71,29 @@ abstract class AbstractPackageTestCase extends TestCase
     /**
      * Get the package service providers.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string[]
      */
-    protected function getPackageProviders()
+    protected function getPackageProviders($app)
     {
-        $provider = $this->getServiceProviderClass();
+        $provider = $this->getServiceProviderClass($app);
 
         if ($provider) {
-            return array_merge($this->getRequiredServiceProviders(), [$provider]);
+            return array_merge($this->getRequiredServiceProviders($app), [$provider]);
         }
 
-        return $this->getRequiredServiceProviders();
+        return $this->getRequiredServiceProviders($app);
     }
 
     /**
      * Get the required service providers.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string[]
      */
-    protected function getRequiredServiceProviders()
+    protected function getRequiredServiceProviders($app)
     {
         return [];
     }
@@ -97,9 +101,11 @@ abstract class AbstractPackageTestCase extends TestCase
     /**
      * Get the service provider class.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string
      */
-    protected function getServiceProviderClass()
+    protected function getServiceProviderClass($app)
     {
         // this may be overwritten, and must be overwritten
         // if used with the service provider test case trait

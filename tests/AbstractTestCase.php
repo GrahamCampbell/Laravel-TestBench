@@ -32,9 +32,11 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
     /**
      * Get the service provider class.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string
      */
-    protected function getServiceProviderClass()
+    protected function getServiceProviderClass($app)
     {
         return 'GrahamCampbell\Tests\TestBench\ServiceProviderStub';
     }
