@@ -16,7 +16,7 @@
 
 namespace GrahamCampbell\Tests\TestBench;
 
-use GrahamCampbell\TestBench\AbstractLaravelTestCase;
+use GrahamCampbell\TestBench\AbstractPackageTestCase;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ use Illuminate\Support\ServiceProvider;
  * @copyright 2013-2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md> Apache 2.0
  */
-abstract class AbstractTestCase extends AbstractLaravelTestCase
+abstract class AbstractTestCase extends AbstractPackageTestCase
 {
     /**
      * Get the service provider class.

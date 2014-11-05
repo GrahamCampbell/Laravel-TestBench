@@ -18,17 +18,16 @@ namespace GrahamCampbell\TestBench;
 
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
 use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
-use Illuminate\Contracts\Foundation\Application;
 use Orchestra\Testbench\TestCase;
 
 /**
- * This is the abstract laravel test case class.
+ * This is the abstract package test case class.
  *
  * @author    Graham Campbell <graham@mineuk.com>
  * @copyright 2013-2014 Graham Campbell
  * @license   <https://github.com/GrahamCampbell/Laravel-TestBench/blob/master/LICENSE.md> Apache 2.0
  */
-abstract class AbstractLaravelTestCase extends TestCase
+abstract class AbstractPackageTestCase extends TestCase
 {
     use HelperTestCaseTrait, LaravelTestCaseTrait;
 
@@ -64,7 +63,7 @@ abstract class AbstractLaravelTestCase extends TestCase
      *
      * @return void
      */
-    protected function additionalSetup(Application $app)
+    protected function additionalSetup($app)
     {
         //
     }
