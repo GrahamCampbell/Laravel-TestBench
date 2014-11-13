@@ -44,9 +44,9 @@ abstract class AbstractPackageTestCase extends TestCase
 
         $app['config']->set('database.default', 'sqlite');
         $app['config']->set('database.connections.sqlite', [
-            'driver' => 'sqlite',
+            'driver'   => 'sqlite',
             'database' => ':memory:',
-            'prefix' => '',
+            'prefix'   => '',
         ]);
 
         $app['config']->set('mail.drive', 'log');
