@@ -48,10 +48,13 @@ abstract class AbstractLaravelTestCase extends TestCase
         );
     }
 
+
+
+
     /**
      * Setup the application environment.
      *
-     * @param \Illuminate\Foundation\Application $app
+     * @param  \Illuminate\Foundation\Application   $app
      *
      * @return void
      */
