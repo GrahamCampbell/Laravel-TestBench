@@ -52,7 +52,6 @@ abstract class AbstractLaravelTestCase extends TestCase
 
 
 
-
     /**
      * Setup the application environment.
      *
