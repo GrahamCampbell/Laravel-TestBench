@@ -8,6 +8,11 @@ CHANGE LOG
 * Switch back to using the orchestral fixture
 
 
+## V1.1.5 (Upcoming)
+
+* Removed the cs fixers
+
+
 ## V1.1.4 (04/10/2014)
 
 * Removed a file from the dist
