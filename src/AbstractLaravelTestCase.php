@@ -21,7 +21,7 @@ use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
 use Orchestra\Testbench\TestCase;
 
 /**
- * This is the abstract laravel test case class.
+ * This is the abstract laravel test case class..
  *
  * @author    Graham Campbell <graham@mineuk.com>
  * @copyright 2013-2014 Graham Campbell
@@ -48,10 +48,14 @@ abstract class AbstractLaravelTestCase extends TestCase
         );
     }
 
+
+
+
+
     /**
      * Setup the application environment.
      *
-     * @param \Illuminate\Foundation\Application $app
+     * @param  \Illuminate\Foundation\Application   $app
      *
      * @return void
      */
