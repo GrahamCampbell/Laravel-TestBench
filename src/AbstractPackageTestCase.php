@@ -57,6 +57,7 @@ abstract class AbstractPackageTestCase extends TestCase
         $this->additionalSetup($app);
     }
 
+
     /** 
      * Additional application environment setup.
      *
