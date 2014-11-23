@@ -32,6 +32,7 @@ abstract class AbstractPackageTestCase extends TestCase
     use HelperTestCaseTrait, LaravelTestCaseTrait;
 
 
+
     /**
      * Setup the application environment.
      *
