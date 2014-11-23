@@ -88,6 +88,7 @@ abstract class AbstractPackageTestCase extends TestCase
         return $this->getRequiredServiceProviders($app);
     }
 
+
     /**
      * Get the required service providers.
      *
