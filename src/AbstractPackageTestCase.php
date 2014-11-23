@@ -67,7 +67,7 @@ abstract class AbstractPackageTestCase extends TestCase
      */
     protected function additionalSetup($app)
     {
-        //
+        // 
     }
 
     /**
