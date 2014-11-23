@@ -5,7 +5,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at http://bit.ly/UWsjkb.
+ * You may obtain a copy of the License at http://bit.ly/UWsjkb.  
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -30,6 +30,7 @@ use Orchestra\Testbench\TestCase;
 abstract class AbstractPackageTestCase extends TestCase
 {
     use HelperTestCaseTrait, LaravelTestCaseTrait;
+
 
     /**
      * Setup the application environment.
@@ -56,7 +57,8 @@ abstract class AbstractPackageTestCase extends TestCase
         $this->additionalSetup($app);
     }
 
-    /**
+
+    /** 
      * Additional application environment setup.
      *
      * @param \Illuminate\Contracts\Foundation\Application $app
@@ -65,7 +67,7 @@ abstract class AbstractPackageTestCase extends TestCase
      */
     protected function additionalSetup($app)
     {
-        //
+        // 
     }
 
     /**
@@ -85,6 +87,7 @@ abstract class AbstractPackageTestCase extends TestCase
 
         return $this->getRequiredServiceProviders($app);
     }
+
 
     /**
      * Get the required service providers.
@@ -109,5 +112,5 @@ abstract class AbstractPackageTestCase extends TestCase
     {
         // this may be overwritten, and must be overwritten
         // if used with the service provider test case trait
-    }
+    }    
 }
