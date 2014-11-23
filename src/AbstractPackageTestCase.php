@@ -58,7 +58,7 @@ abstract class AbstractPackageTestCase extends TestCase
         $this->additionalSetup($app);
     }
 
-    /**
+    /** 
      * Additional application environment setup.
      *
      * @param \Illuminate\Contracts\Foundation\Application $app
