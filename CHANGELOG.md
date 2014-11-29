@@ -9,6 +9,11 @@ CHANGE LOG
 * Switch back to using the orchestral fixture
 
 
+## V1.1.6 (29/11/2014)
+
+* Removed the extra symfony dependencies
+
+
 ## V1.1.5 (23/11/2014)
 
 * Removed the cs fixers
