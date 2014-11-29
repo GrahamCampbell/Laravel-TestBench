@@ -12,11 +12,6 @@
     "require": {
         "php": ">=5.4.7",
         "laravel/framework": "~4.2.10",
-        "symfony/config": "2.5.*",
-        "symfony/event-dispatcher": "2.5.*",
-        "symfony/filesystem": "2.5.*",
-        "symfony/stopwatch": "2.5.*",
-        "symfony/yaml": "2.5.*",
         "orchestra/testbench": "2.2.*",
         "mockery/mockery": "~0.9.2",
         "phpunit/phpunit": "~4.3"
