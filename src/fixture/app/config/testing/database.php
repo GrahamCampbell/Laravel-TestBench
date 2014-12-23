@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -45,14 +45,14 @@ return array(
     |
     */
 
-    'connections' => array(
+    'connections' => [
 
-        'sqlite' => array(
+        'sqlite' => [
             'driver'   => 'sqlite',
             'database' => ':memory:',
             'prefix'   => '',
-        ),
+        ],
 
-    ),
+    ],
 
-);
+];

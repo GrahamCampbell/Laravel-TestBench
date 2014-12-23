@@ -40,12 +40,12 @@ abstract class AbstractLaravelTestCase extends TestCase
     {
         $basePath = realpath(__DIR__.'/fixture');
 
-        return array(
+        return [
             'app'     => "{$basePath}/app",
             'public'  => "{$basePath}/public",
             'base'    => $basePath,
             'storage' => "{$basePath}/app/storage",
-        );
+        ];
     }
 
     /**
@@ -96,7 +96,7 @@ abstract class AbstractLaravelTestCase extends TestCase
         $provider = $this->getServiceProviderClass();
 
         if ($provider) {
-            return array_merge($this->getRequiredServiceProviders(), array($provider));
+            return array_merge($this->getRequiredServiceProviders(), [$provider]);
         }
 
         return $this->getRequiredServiceProviders();
@@ -109,7 +109,7 @@ abstract class AbstractLaravelTestCase extends TestCase
      */
     protected function getRequiredServiceProviders()
     {
-        return array();
+        return [];
     }
 
     /**

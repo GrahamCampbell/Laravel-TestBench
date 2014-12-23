@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -106,4 +106,4 @@ return array(
 
     'analytics' => 'partials.analytics',
 
-);
+];

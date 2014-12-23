@@ -44,7 +44,7 @@ class SetupTest extends AbstractLaravelTestCase
      */
     protected function getRequiredServiceProviders()
     {
-        return array();
+        return [];
     }
 
     public function testFilters()

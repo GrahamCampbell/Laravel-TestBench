@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Config;
 
-return array(
+return [
 
     /*
      |--------------------------------------------------------------------------
@@ -25,10 +25,10 @@ return array(
      | but this can cause problems with large data collectors.
      |
      */
-    'storage' => array(
+    'storage' => [
         'enabled' => true,
-        'path' => storage_path().'/debugbar',
-    ),
+        'path'    => storage_path().'/debugbar',
+    ],
 
     /*
      |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
      |
      */
 
-    'collectors' => array(
+    'collectors' => [
         'phpinfo'         => true,  // Php version
         'messages'        => true,  // Messages
         'time'            => true,  // Time Datalogger
@@ -98,7 +98,7 @@ return array(
         'config'          => false, // Display config settings
         'auth'            => false, // Display Laravel authentication status
         'session'         => false, // Display session data in a separate tab
-    ),
+    ],
 
     /*
      |--------------------------------------------------------------------------
@@ -109,28 +109,28 @@ return array(
      |
      */
 
-    'options' => array(
-        'auth' => array(
+    'options' => [
+        'auth' => [
             'show_name' => false,   // Also show the users name/email in the debugbar
-        ),
-        'db' => array(
+        ],
+        'db' => [
             'with_params' => true,  // Render SQL with the parameters substituted
             'timeline'    => false, // Add the queries to the timeline
             'backtrace'   => false, // EXPERIMENTAL: Use a backtrace to find the origin of the query
-        ),
-        'mail' => array(
+        ],
+        'mail' => [
             'full_log' => false,
-        ),
-        'views' => array(
+        ],
+        'views' => [
             'data' => false,  // Note: Can slow down the application, because the data can be quite large..
-        ),
-        'route' => array(
+        ],
+        'route' => [
             'label' => true,  // Show complete route on bar
-        ),
-        'logs' => array(
+        ],
+        'logs' => [
             'file' => null,
-        ),
-    ),
+        ],
+    ],
 
     /*
      |--------------------------------------------------------------------------
@@ -145,4 +145,4 @@ return array(
 
     'inject' => true,
 
-);
+];

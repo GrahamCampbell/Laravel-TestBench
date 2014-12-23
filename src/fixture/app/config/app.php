@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -109,4 +109,4 @@ return array(
 
     'manifest' => storage_path().'/meta',
 
-);
+];

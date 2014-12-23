@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -80,4 +80,4 @@ return array(
 
     'description' => 'Platform is a fork of Laravel with some extra goodies.',
 
-);
+];

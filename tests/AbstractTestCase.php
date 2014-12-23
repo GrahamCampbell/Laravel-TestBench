@@ -60,9 +60,9 @@ class ServiceProviderStub extends ServiceProvider
 
     public function provides()
     {
-        return array(
+        return [
             'testbench.foostub',
-        );
+        ];
     }
 }
 

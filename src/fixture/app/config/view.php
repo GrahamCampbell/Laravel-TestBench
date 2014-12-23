@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -27,7 +27,7 @@ return array(
     |
     */
 
-    'paths' => array(__DIR__.'/../views'),
+    'paths' => [__DIR__.'/../views'],
 
     /*
     |--------------------------------------------------------------------------
@@ -42,4 +42,4 @@ return array(
 
     'pagination' => 'pagination::slider-3',
 
-);
+];

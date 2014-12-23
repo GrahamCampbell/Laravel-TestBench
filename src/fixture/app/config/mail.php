@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ return array(
     |
     */
 
-    'from' => array('address' => null, 'name' => null),
+    'from' => ['address' => null, 'name' => null],
 
     /*
     |--------------------------------------------------------------------------
@@ -135,4 +135,4 @@ return array(
 
     'pretend' => false,
 
-);
+];
