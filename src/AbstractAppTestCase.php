@@ -81,7 +81,7 @@ abstract class AbstractAppTestCase extends TestCase
         return $app['config']['app.timezone'];
     }
 
-     /**
+    /**
      * Get application aliases.
      *
      * @param \Illuminate\Foundation\Contracts\Application $app
