@@ -47,4 +47,4 @@ You may see an example of implementation in pretty much all of my [Laravel](http
 
 ## License
 
-Factory Muffin is licensed under [The MIT License (MIT)](LICENSE).
+Laravel TestBench is licensed under [The MIT License (MIT)](LICENSE).
