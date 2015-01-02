@@ -1,7 +1,7 @@
 Laravel TestBench
 =================
 
-Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 4.2](http://laravel.com). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE.md), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
+Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 4.2](http://laravel.com). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), and the [Orchestral Testbench](https://github.com/orchestral/testbench) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [license](LICENSE), [api docs](http://docs.grahamjcampbell.co.uk), and [contribution guidelines](CONTRIBUTING.md).
 
 ![Laravel TestBench](https://cloud.githubusercontent.com/assets/2829600/4432280/a961ad84-468c-11e4-9911-d5ae8c926a1b.PNG)
 
@@ -9,7 +9,7 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 <a href="https://travis-ci.org/GrahamCampbell/Laravel-TestBench"><img src="https://img.shields.io/travis/GrahamCampbell/Laravel-TestBench/master.svg?style=flat-square" alt="Build Status"></img></a>
 <a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-TestBench.svg?style=flat-square" alt="Coverage Status"></img></a>
 <a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench"><img src="https://img.shields.io/scrutinizer/g/GrahamCampbell/Laravel-TestBench.svg?style=flat-square" alt="Quality Score"></img></a>
-<a href="LICENSE.md"><img src="https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
 <a href="https://github.com/GrahamCampbell/Laravel-TestBench/releases"><img src="https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench.svg?style=flat-square" alt="Latest Version"></img></a>
 </p>
 
@@ -47,18 +47,4 @@ You may see an example of implementation in pretty much all of my [Laravel](http
 
 ## License
 
-Apache License
-
-Copyright 2013-2014 Graham Campbell
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
- http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Factory Muffin is licensed under [The MIT License (MIT)](LICENSE).
