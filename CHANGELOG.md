@@ -2,6 +2,12 @@ CHANGE LOG
 ==========
 
 
+## V1.1.7 (02/01/2015)
+
+* CS fixes
+* Moved to the MIT license
+
+
 ## V1.1.6 (29/11/2014)
 
 * Removed the extra symfony dependencies
