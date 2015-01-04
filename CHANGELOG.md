@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V2.0 (Upcoming)
+## V2.0 Beta 1 (Upcoming)
 
 * Upgrade to Laravel 5.0
 * Cleaned up the code
