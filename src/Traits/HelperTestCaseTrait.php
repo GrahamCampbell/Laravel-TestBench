@@ -105,4 +105,28 @@ trait HelperTestCaseTrait
 
         static::assertTrue(method_exists($class, $method), $msg);
     }
+
+    /**
+     * Assert that the element exists in the json.
+     *
+     * @param mixed  $needle
+     * @param array  $haystack
+     * @param string $msg
+     *
+     * @return void
+     */
+    public static function assertInJson($needle, $haystack, $msg = '')
+    {
+        if ($msg === '') {
+            $msg = "Expected the array to contain the element '$needle'.";
+        }
+
+        $array = json_decode($needle, true);
+
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            throw new \InvalidArgumentException("Invalid json provided: '$needle'.");
+        }
+
+        static::assertArraySubset($haystack, $array, false, $msg);
+    }
 }
