@@ -45,4 +45,28 @@ class HelpersTest extends AbstractTestBenchTestCase
     {
         $this->assertMethodExists('getFoo', 'GrahamCampbell\Tests\TestBench\FooStub');
     }
+
+    public function testInJson()
+    {
+        $this->assertInJson('{"foo":"bar"}', ['foo' => 'bar']);
+        $this->assertInJson('{ "foo": "bar", "bar": "baz" }', ['foo' => 'bar']);
+        $this->assertInJson('{ "foo": "bar", "bar": "baz" }', ['bar' => 'baz']);
+    }
+
+    /**
+     * @expectedException PHPUnit_Framework_ExpectationFailedException
+     */
+    public function testNotInJson()
+    {
+        $this->assertInJson('{"foo":"baz"}', ['foo' => 'bar']);
+        $this->assertInJson('{ "foo": "bar", "bar": "baz" }', ['foo' => 'baz']);
+    }
+
+    /**
+     * @expectedException InvalidArgumentException
+     */
+    public function testBadJsonInNotInJson()
+    {
+        $this->assertInJson('foobar', ['foo' => 'bar']);
+    }
 }
