@@ -18,6 +18,7 @@ use Mockery;
  * This is the helper test case trait.
  *
  * @author Graham Campbell <graham@mineuk.com>
+ * @author Joseph Cohen <joseph.cohen@dinkbit.com>
  */
 trait HelperTestCaseTrait
 {
@@ -110,7 +111,7 @@ trait HelperTestCaseTrait
     /**
      * Assert that the element exists in the json.
      *
-     * @param mixed  $needle
+     * @param string $needle
      * @param array  $haystack
      * @param string $msg
      *
@@ -118,7 +119,7 @@ trait HelperTestCaseTrait
      *
      * @return void
      */
-    public static function assertInJson($needle, $haystack, $msg = '')
+    public static function assertInJson($needle, array $haystack, $msg = '')
     {
         if ($msg === '') {
             $msg = "Expected the array to contain the element '$needle'.";
