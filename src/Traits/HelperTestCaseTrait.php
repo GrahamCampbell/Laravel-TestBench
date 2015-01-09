@@ -11,6 +11,7 @@
 
 namespace GrahamCampbell\TestBench\Traits;
 
+use InvalidArgumentException;
 use Mockery;
 
 /**
@@ -113,6 +114,8 @@ trait HelperTestCaseTrait
      * @param array  $haystack
      * @param string $msg
      *
+     * @throws \InvalidArgumentException
+     *
      * @return void
      */
     public static function assertInJson($needle, $haystack, $msg = '')
@@ -124,7 +127,7 @@ trait HelperTestCaseTrait
         $array = json_decode($needle, true);
 
         if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new \InvalidArgumentException("Invalid json provided: '$needle'.");
+            throw new InvalidArgumentException("Invalid json provided: '$needle'.");
         }
 
         static::assertArraySubset($haystack, $array, false, $msg);
