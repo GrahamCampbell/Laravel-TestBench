@@ -7,6 +7,7 @@ CHANGE LOG
 * Upgrade to Laravel 5.0
 * Cleaned up the code
 * Switch back to using the orchestral fixture
+* Added assertInJson method
 
 
 ## V1.1.7 (02/01/2015)
