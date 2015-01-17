@@ -9,27 +9,13 @@
             "email": "graham@mineuk.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/GrahamCampbell/framework"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/GrahamCampbell/html"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/GrahamCampbell/testbench"
-        }
-    ],
     "require": {
         "php": ">=5.4.7",
         "laravel/framework": "5.0.*",
-        "illuminate/html": "5.0.*",
+        "orchestra/config": "3.0.*",
         "orchestra/testbench": "3.0.*",
-        "mockery/mockery": "~0.9.2",
-        "phpunit/phpunit": "~4.3"
+        "mockery/mockery": "~0.9.3",
+        "phpunit/phpunit": "~4.4"
     },
     "autoload": {
         "psr-4": {
