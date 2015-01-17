@@ -11,6 +11,8 @@
 
 namespace GrahamCampbell\TestBench\Traits;
 
+use Exception;
+
 /**
  * This is the laravel test case trait.
  *
@@ -32,7 +34,7 @@ trait LaravelTestCaseTrait
         try {
             $class = $this->makeInjectableClass($name);
             $this->assertInstanceOf($name, $class->getInjectedObject());
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $injectable = false;
         }
 
