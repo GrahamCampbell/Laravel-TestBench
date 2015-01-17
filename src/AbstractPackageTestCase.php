@@ -42,7 +42,7 @@ abstract class AbstractPackageTestCase extends TestCase
             'prefix'   => '',
         ]);
 
-        $app['config']->set('mail.drive', 'log');
+        $app['config']->set('mail.driver', 'log');
 
         $app['config']->set('session.driver', 'array');
 
