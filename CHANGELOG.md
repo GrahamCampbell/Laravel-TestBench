@@ -4,7 +4,7 @@ CHANGE LOG
 
 ## V2.0 Beta 1 (Upcoming)
 
-* Upgrade to Laravel 5.0
+* Upgraded to laravel 5.0
 * Cleaned up the code
 * Switch back to using the orchestral fixture
 * Added assertInJson method
