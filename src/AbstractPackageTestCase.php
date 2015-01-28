@@ -13,7 +13,6 @@ namespace GrahamCampbell\TestBench;
 
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
 use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
-use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase;
 
 /**
@@ -60,20 +59,6 @@ abstract class AbstractPackageTestCase extends TestCase
     protected function additionalSetup($app)
     {
         //
-    }
-
-    /**
-     * Resolve application implementation.
-     *
-     * @return \Illuminate\Foundation\Application
-     */
-    protected function resolveApplication()
-    {
-        $app = new Application($this->getBasePath());
-
-        $app->bind('Illuminate\Foundation\Bootstrap\LoadConfiguration', 'Orchestra\Config\Bootstrap\LoadConfiguration');
-
-        return $app;
     }
 
     /**
