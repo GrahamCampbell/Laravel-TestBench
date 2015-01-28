@@ -33,18 +33,18 @@ abstract class AbstractPackageTestCase extends TestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('cache.driver', 'array');
+        $app->config->set('cache.driver', 'array');
 
-        $app['config']->set('database.default', 'sqlite');
-        $app['config']->set('database.connections.sqlite', [
+        $app->config->set('database.default', 'sqlite');
+        $app->config->set('database.connections.sqlite', [
             'driver'   => 'sqlite',
             'database' => ':memory:',
             'prefix'   => '',
         ]);
 
-        $app['config']->set('mail.driver', 'log');
+        $app->config->set('mail.driver', 'log');
 
-        $app['config']->set('session.driver', 'array');
+        $app->config->set('session.driver', 'array');
 
         $this->additionalSetup($app);
     }

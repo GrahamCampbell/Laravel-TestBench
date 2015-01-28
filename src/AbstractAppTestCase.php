@@ -71,7 +71,7 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected function getApplicationTimezone($app)
     {
-        return $app['config']['app.timezone'];
+        return $app->config['app.timezone'];
     }
 
     /**
@@ -83,7 +83,7 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected function getApplicationAliases($app)
     {
-        return $app['config']['app.aliases'];
+        return $app->config['app.aliases'];
     }
 
     /**
@@ -95,7 +95,7 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected function getApplicationProviders($app)
     {
-        return $app['config']['app.providers'];
+        return $app->config['app.providers'];
     }
 
     /**
