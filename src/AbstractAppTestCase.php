@@ -63,18 +63,6 @@ abstract class AbstractAppTestCase extends TestCase
     }
 
     /**
-     * Get application timezone.
-     *
-     * @param \Illuminate\Foundation\Contracts\Application $app
-     *
-     * @return string
-     */
-    protected function getApplicationTimezone($app)
-    {
-        return $app->config['app.timezone'];
-    }
-
-    /**
      * Get application aliases.
      *
      * @param \Illuminate\Foundation\Contracts\Application $app
@@ -95,7 +83,7 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected function getApplicationProviders($app)
     {
-        return $app->config['app.providers'];
+        return array_merge($app->config['app.providers'], ['Orchestra\Database\MigrationServiceProvider']);
     }
 
     /**
