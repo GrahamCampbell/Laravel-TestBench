@@ -13,6 +13,7 @@ namespace GrahamCampbell\TestBench;
 
 use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
 use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
+use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase;
 use ReflectionClass;
 use RuntimeException;
@@ -84,6 +85,16 @@ abstract class AbstractAppTestCase extends TestCase
     protected function getApplicationProviders($app)
     {
         return array_merge($app->config['app.providers'], ['Orchestra\Database\MigrationServiceProvider']);
+    }
+
+    /**
+     * Resolve application implementation.
+     *
+     * @return \Illuminate\Foundation\Contracts\Application
+     */
+    protected function resolveApplication()
+    {
+        return new Application($this->getBasePath());
     }
 
     /**
