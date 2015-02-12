@@ -2,6 +2,12 @@ CHANGE LOG
 ==========
 
 
+## V2.0.1 (12/02/2015)
+
+* Updated for upstream changes
+* Tweaked the application test case
+
+
 ## V2.0 (04/02/2015)
 
 * Upgraded to laravel 5.0
