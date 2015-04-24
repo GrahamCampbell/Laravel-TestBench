@@ -21,16 +21,12 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 To get the latest version of Laravel TestBench, simply add the following line to the require block of your `composer.json` file:
 
 ```
-"graham-campbell/testbench": "~2.0"
+"graham-campbell/testbench": "~2.1"
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
 Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
-
-#### Looking for a laravel 4 compatable version?
-
-Checkout the [1.1 branch](https://github.com/GrahamCampbell/Laravel-TestBench/tree/1.1), installable by requiring `"graham-campbell/testbench": "~1.0"`.
 
 
 ## Configuration
