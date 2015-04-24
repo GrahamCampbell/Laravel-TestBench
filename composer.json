@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4.7",
+        "php": ">=5.5.9",
         "orchestra/testbench": "3.0.*",
         "mockery/mockery": "~0.9.3",
         "phpunit/phpunit": "~4.5"
