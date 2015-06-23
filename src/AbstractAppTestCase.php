@@ -99,30 +99,6 @@ abstract class AbstractAppTestCase extends TestCase
     }
 
     /**
-     * Setup the application environment.
-     *
-     * @param \Illuminate\Contracts\Foundation\Application $app
-     *
-     * @return void
-     */
-    protected function getEnvironmentSetUp($app)
-    {
-        $this->additionalSetup($app);
-    }
-
-    /**
-     * Additional application environment setup.
-     *
-     * @param \Illuminate\Contracts\Foundation\Application $app
-     *
-     * @return void
-     */
-    protected function additionalSetup($app)
-    {
-        //
-    }
-
-    /**
      * Get the service provider class.
      *
      * @param \Illuminate\Contracts\Foundation\Application $app

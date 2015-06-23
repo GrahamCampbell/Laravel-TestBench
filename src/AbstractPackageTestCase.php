@@ -46,20 +46,6 @@ abstract class AbstractPackageTestCase extends TestCase
         $app->config->set('mail.driver', 'log');
 
         $app->config->set('session.driver', 'array');
-
-        $this->additionalSetup($app);
-    }
-
-    /**
-     * Additional application environment setup.
-     *
-     * @param \Illuminate\Contracts\Foundation\Application $app
-     *
-     * @return void
-     */
-    protected function additionalSetup($app)
-    {
-        //
     }
 
     /**
