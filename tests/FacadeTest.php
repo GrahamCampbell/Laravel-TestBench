@@ -11,7 +11,7 @@
 
 namespace GrahamCampbell\Tests\TestBench;
 
-use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 /**
  * This is the facade test class.
@@ -20,7 +20,7 @@ use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
  */
 class FacadeTest extends AbstractTestCase
 {
-    use FacadeTestCaseTrait;
+    use FacadeTrait;
 
     /**
      * Get the facade accessor.

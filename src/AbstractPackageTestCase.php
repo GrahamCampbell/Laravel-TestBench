@@ -11,8 +11,9 @@
 
 namespace GrahamCampbell\TestBench;
 
-use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
-use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
+use GrahamCampbell\TestBenchCore\HelperTrait;
+use GrahamCampbell\TestBenchCore\LaravelTrait;
+use GrahamCampbell\TestBenchCore\MockeryTrait;
 use Orchestra\Testbench\TestCase;
 
 /**
@@ -22,7 +23,7 @@ use Orchestra\Testbench\TestCase;
  */
 abstract class AbstractPackageTestCase extends TestCase
 {
-    use HelperTestCaseTrait, LaravelTestCaseTrait;
+    use HelperTrait, LaravelTrait, MockeryTrait;
 
     /**
      * Setup the application environment.

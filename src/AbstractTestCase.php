@@ -11,7 +11,8 @@
 
 namespace GrahamCampbell\TestBench;
 
-use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
+use GrahamCampbell\TestBenchCore\HelperTrait;
+use GrahamCampbell\TestBenchCore\MockeryTrait;
 use PHPUnit_Framework_TestCase as TestCase;
 
 /**
@@ -21,5 +22,5 @@ use PHPUnit_Framework_TestCase as TestCase;
  */
 abstract class AbstractTestCase extends TestCase
 {
-    use HelperTestCaseTrait;
+    use HelperTrait, MockeryTrait;
 }

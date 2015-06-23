@@ -11,8 +11,9 @@
 
 namespace GrahamCampbell\TestBench;
 
-use GrahamCampbell\TestBench\Traits\HelperTestCaseTrait;
-use GrahamCampbell\TestBench\Traits\LaravelTestCaseTrait;
+use GrahamCampbell\TestBenchCore\HelperTrait;
+use GrahamCampbell\TestBenchCore\LaravelTrait;
+use GrahamCampbell\TestBenchCore\MockeryTrait;
 use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase;
 use ReflectionClass;
@@ -25,7 +26,7 @@ use RuntimeException;
  */
 abstract class AbstractAppTestCase extends TestCase
 {
-    use HelperTestCaseTrait, LaravelTestCaseTrait;
+    use HelperTrait, LaravelTrait, MockeryTrait;
 
     /**
      * Get the base path.
