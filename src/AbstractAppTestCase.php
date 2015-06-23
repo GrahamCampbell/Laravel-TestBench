@@ -15,6 +15,7 @@ use GrahamCampbell\TestBenchCore\HelperTrait;
 use GrahamCampbell\TestBenchCore\LaravelTrait;
 use GrahamCampbell\TestBenchCore\MockeryTrait;
 use Illuminate\Foundation\Application;
+use Orchestra\Database\MigrationServiceProvider;
 use Orchestra\Testbench\TestCase;
 use ReflectionClass;
 use RuntimeException;
@@ -85,7 +86,7 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected function getApplicationProviders($app)
     {
-        return array_merge($app->config['app.providers'], ['Orchestra\Database\MigrationServiceProvider']);
+        return array_merge($app->config['app.providers'], [MigrationServiceProvider::class]);
     }
 
     /**

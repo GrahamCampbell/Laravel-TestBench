@@ -24,7 +24,7 @@ class ServiceProviderTest extends AbstractTestCase
 
     public function testFooStubIsInjectable()
     {
-        $this->assertIsInjectable('GrahamCampbell\Tests\TestBench\FooStub');
+        $this->assertIsInjectable(FooStub::class);
     }
 
     /**
@@ -32,7 +32,7 @@ class ServiceProviderTest extends AbstractTestCase
      */
     public function testBarStubIsNotInjectable()
     {
-        $this->assertIsInjectable('GrahamCampbell\Tests\TestBench\BarStub');
+        $this->assertIsInjectable(BarStub::class);
     }
 
     /**
@@ -40,12 +40,15 @@ class ServiceProviderTest extends AbstractTestCase
      */
     public function testBazStubIsNotInjectable()
     {
-        $this->assertIsInjectable('GrahamCampbell\Tests\TestBench\BazStub');
+        $this->assertIsInjectable(BazStub::class);
     }
 
+    /**
+     * @depends testFooStubIsInjectable
+     */
     public function testFooStub()
     {
-        $result = $this->app->make('GrahamCampbell\Tests\TestBench\FooStub')->getBar();
+        $result = $this->app->make(FooStub::class)->getBar();
         $this->assertSame('baz', $result);
     }
 }

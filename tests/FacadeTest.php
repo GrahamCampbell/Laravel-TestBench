@@ -39,7 +39,7 @@ class FacadeTest extends AbstractTestCase
      */
     protected function getFacadeClass()
     {
-        return 'GrahamCampbell\Tests\TestBench\FooFacade';
+        return FooFacade::class;
     }
 
     /**
@@ -49,6 +49,6 @@ class FacadeTest extends AbstractTestCase
      */
     protected function getFacadeRoot()
     {
-        return 'GrahamCampbell\Tests\TestBench\FooStub';
+        return FooStub::class;
     }
 }

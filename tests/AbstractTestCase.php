@@ -31,7 +31,7 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app)
     {
-        return 'GrahamCampbell\Tests\TestBench\ServiceProviderStub';
+        return ServiceProviderStub::class;
     }
 }
 
@@ -50,7 +50,7 @@ class ServiceProviderStub extends ServiceProvider
             return new FooStub('baz');
         });
 
-        $this->app->alias('testbench.foostub', 'GrahamCampbell\Tests\TestBench\FooStub');
+        $this->app->alias('testbench.foostub', FooStub::class);
     }
 
     public function provides()
