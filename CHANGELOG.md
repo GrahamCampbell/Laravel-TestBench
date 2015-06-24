@@ -6,6 +6,7 @@ CHANGE LOG
 
 * Refactoring and abstracted core package
 * Drop support for laravel 5.0
+* Code cleanup
 
 
 ## V2.1 (24/04/2015)
