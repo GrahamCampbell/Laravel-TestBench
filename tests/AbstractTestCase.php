@@ -39,11 +39,6 @@ class ServiceProviderStub extends ServiceProvider
 {
     protected $defer = false;
 
-    public function boot()
-    {
-        //
-    }
-
     public function register()
     {
         $this->app->singleton('testbench.foostub', function ($app) {
