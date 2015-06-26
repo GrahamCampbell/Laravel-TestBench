@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V3.0 (Upcoming)
+## V3.0 (26/06/2015)
 
 * Refactoring and abstracted core package
 * Drop support for laravel 5.0
