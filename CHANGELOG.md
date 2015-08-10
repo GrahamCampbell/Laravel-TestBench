@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V3.0.1 (10/08/2015)
+
+* Set a dummy encryption key
+
+
 ## V3.0 (26/06/2015)
 
 * Refactoring and abstracted core package
