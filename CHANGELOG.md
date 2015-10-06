@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V3.0.2 (06/10/2015)
+
+* Minor tweaks
+
+
 ## V3.0.1 (10/08/2015)
 
 * Set a dummy encryption key
