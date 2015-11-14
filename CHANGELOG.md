@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V3.1 (Upcoming)
+## V3.1 (14/11/2015)
 
 * Added laravel 5.2 support
 
