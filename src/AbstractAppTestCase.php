@@ -68,7 +68,7 @@ abstract class AbstractAppTestCase extends TestCase
     /**
      * Get application aliases.
      *
-     * @param \Illuminate\Foundation\Contracts\Application $app
+     * @param \Illuminate\Contracts\Foundation\Application $app
      *
      * @return array
      */
@@ -80,7 +80,7 @@ abstract class AbstractAppTestCase extends TestCase
     /**
      * Get application providers.
      *
-     * @param \Illuminate\Foundation\Contracts\Application $app
+     * @param \Illuminate\Contracts\Foundation\Application $app
      *
      * @return array
      */
@@ -92,7 +92,7 @@ abstract class AbstractAppTestCase extends TestCase
     /**
      * Resolve application implementation.
      *
-     * @return \Illuminate\Foundation\Contracts\Application
+     * @return \Illuminate\Contracts\Foundation\Application
      */
     protected function resolveApplication()
     {
