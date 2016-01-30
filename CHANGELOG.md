@@ -2,6 +2,12 @@ CHANGE LOG
 ==========
 
 
+## V3.1.1 (30/01/2016)
+
+* Fixed some phpdoc
+* Fixed some typos
+
+
 ## V3.1 (14/11/2015)
 
 * Added laravel 5.2 support
