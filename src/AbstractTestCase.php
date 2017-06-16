@@ -13,7 +13,7 @@ namespace GrahamCampbell\TestBench;
 
 use GrahamCampbell\TestBenchCore\HelperTrait;
 use GrahamCampbell\TestBenchCore\MockeryTrait;
-use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * This is the abstract test case class.
