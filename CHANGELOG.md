@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V3.4 (16/06/2017)
+
+* Added AbstractNewTestCase for PHPUnit 6
+
+
 ## V3.3 (01/01/2017)
 
 * Added laravel 5.4 support
