@@ -17,25 +17,15 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 ## Installation
 
-Either [PHP](https://php.net) 5.5+ or [HHVM](http://hhvm.com) 3.6+ are required.
+Laravel TestBench requires [PHP](https://php.net) 5.5+. This particular version supports Laravel 5.1, 5.2, 5.3, or 5.4 only.
 
-To get the latest version of Laravel TestBench, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
 $ composer require graham-campbell/testbench --dev
 ```
 
-Instead, you may of course manually update your require-dev block and run `composer update` if you so choose:
-
-```json
-{
-    "require-dev": {
-        "graham-campbell/testbench": "^3.0"
-    }
-}
-```
-
-Once Laravel TestBench is installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
+Once installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
 
 
 ## Configuration
