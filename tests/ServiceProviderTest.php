@@ -28,7 +28,7 @@ class ServiceProviderTest extends AbstractTestCase
     }
 
     /**
-     * @expectedException PHPUnit_Framework_ExpectationFailedException
+     * @expectedException PHPUnit\Framework\ExpectationFailedException
      */
     public function testBarStubIsNotInjectable()
     {
@@ -36,7 +36,7 @@ class ServiceProviderTest extends AbstractTestCase
     }
 
     /**
-     * @expectedException PHPUnit_Framework_ExpectationFailedException
+     * @expectedException PHPUnit\Framework\ExpectationFailedException
      */
     public function testBazStubIsNotInjectable()
     {
