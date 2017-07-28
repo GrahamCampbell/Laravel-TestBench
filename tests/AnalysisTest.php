@@ -14,6 +14,8 @@ declare(strict_types=1);
 namespace GrahamCampbell\Tests\TestBench;
 
 use GrahamCampbell\Analyzer\AnalysisTrait;
+use GrahamCampbell\Tests\TestBench\BazStub;
+use Orchestra\Database\MigrationServiceProvider;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -36,5 +38,15 @@ class AnalysisTest extends TestCase
             realpath(__DIR__.'/../src'),
             realpath(__DIR__),
         ];
+    }
+
+    /**
+     * Get the classes to ignore not existing.
+     *
+     * @return string[]
+     */
+    protected function getIgnored()
+    {
+        return [BazStub::class, MigrationServiceProvider::class];
     }
 }

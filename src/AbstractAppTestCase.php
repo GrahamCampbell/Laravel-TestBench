@@ -88,7 +88,11 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected function getApplicationProviders($app)
     {
-        return array_merge($app->config['app.providers'], [MigrationServiceProvider::class]);
+        if (class_exists(MigrationServiceProvider::class)) {
+            return array_merge($app->config['app.providers'], [MigrationServiceProvider::class]);
+        }
+
+        return $app->config['app.providers'];
     }
 
     /**
