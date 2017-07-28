@@ -14,7 +14,6 @@ declare(strict_types=1);
 namespace GrahamCampbell\Tests\TestBench;
 
 use GrahamCampbell\Analyzer\AnalysisTrait;
-use GrahamCampbell\Tests\TestBench\BazStub;
 use Orchestra\Database\MigrationServiceProvider;
 use PHPUnit\Framework\TestCase;
 
