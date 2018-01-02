@@ -5,6 +5,8 @@ CHANGE LOG
 ## V5.0 (02/01/2018)
 
 * Removed BC layer
+* Drop support for PHP 7.0
+* Support only Laravel 5.5/5.6
 
 
 ## V4.0 (06/08/2017)
