@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V5.1 (Upcoming)
+
+* Added Laravel 5.7 support
+
+
 ## V5.0 (02/01/2018)
 
 * Removed BC layer
