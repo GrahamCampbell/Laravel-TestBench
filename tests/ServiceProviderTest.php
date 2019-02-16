@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace GrahamCampbell\Tests\TestBench;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
+use PHPUnit\Framework\ExpectationFailedException;
 
 /**
  * This is the service provider test class.
@@ -29,19 +30,15 @@ class ServiceProviderTest extends AbstractTestCase
         $this->assertIsInjectable(FooStub::class);
     }
 
-    /**
-     * @expectedException PHPUnit\Framework\ExpectationFailedException
-     */
     public function testBarStubIsNotInjectable()
     {
+        $this->expectException(ExpectationFailedException::class);
         $this->assertIsInjectable(BarStub::class);
     }
 
-    /**
-     * @expectedException PHPUnit\Framework\ExpectationFailedException
-     */
     public function testBazStubIsNotInjectable()
     {
+        $this->expectException(ExpectationFailedException::class);
         $this->assertIsInjectable(BazStub::class);
     }
 
