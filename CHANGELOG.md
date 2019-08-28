@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V5.3.1 (28/08/2019)
+
+* Fixed orchestral version constraint
+
+
 ## V5.3 (26/08/2019)
 
 * Added Laravel 6 support
