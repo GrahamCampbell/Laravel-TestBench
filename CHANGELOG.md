@@ -2,6 +2,12 @@ CHANGE LOG
 ==========
 
 
+## V5.4 (28/12/2019)
+
+* Added Laravel 7 support
+* Support PHPUnit 9 too
+
+
 ## V5.3.1 (28/08/2019)
 
 * Fixed orchestral version constraint
