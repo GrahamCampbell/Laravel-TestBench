@@ -25,7 +25,9 @@ use Orchestra\Testbench\TestCase;
  */
 abstract class AbstractPackageTestCase extends TestCase
 {
-    use HelperTrait, LaravelTrait, MockeryTrait;
+    use HelperTrait;
+    use LaravelTrait;
+    use MockeryTrait;
 
     /**
      * Setup the application environment.

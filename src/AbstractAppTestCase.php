@@ -29,7 +29,9 @@ use RuntimeException;
  */
 abstract class AbstractAppTestCase extends TestCase
 {
-    use HelperTrait, LaravelTrait, MockeryTrait;
+    use HelperTrait;
+    use LaravelTrait;
+    use MockeryTrait;
 
     /**
      * Get the base path.
