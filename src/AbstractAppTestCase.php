@@ -32,6 +32,7 @@ abstract class AbstractAppTestCase extends TestCase
     use HelperTrait;
     use LaravelTrait;
     use MockeryTrait;
+
     /**
      * Get the base path.
      *
