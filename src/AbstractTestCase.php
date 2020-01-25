@@ -24,5 +24,6 @@ use PHPUnit\Framework\TestCase;
  */
 abstract class AbstractTestCase extends TestCase
 {
-    use HelperTrait, MockeryTrait;
+    use HelperTrait;
+    use MockeryTrait;
 }
