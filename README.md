@@ -19,6 +19,18 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 Laravel TestBench requires [PHP](https://php.net) 7.1-7.4, and supports [PHPUnit](https://phpunit.de/) 6-9. This particular version supports Laravel 5.5-7.
 
+| TestBench | L5.1               | L5.2               | L5.3               | L5.4               | L5.5               | L5.6               | L5.7               | L5.8               | L6                 | L7                 |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 3.4       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| 4.0       | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
+| 5.4       | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
+| TestBench | PHPUnit 4.8        | PHPUnit 5          | PHPUnit 6          | PHPUnit 7          | PHPUnit 8          | PHPUnit 9          |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 3.4       | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| 4.0       | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                |
+| 5.4       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
