@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V5.4.2 (13/04/2020)
+
+* Updated funding information
+
+
 ## V5.4.1 (01/03/2020)
 
 * Miscellaneous tweaks
