@@ -7,7 +7,7 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 <p align="center">
 <a href="https://github.com/GrahamCampbell/Laravel-TestBench/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/GrahamCampbell/Laravel-TestBench/Tests?label=Tests&style=flat-square" alt="Build Status"></img></a>
-<a href="https://github.styleci.io/repos/15239209"><img src="https://github.styleci.io/repos/115239209/shield" alt="StyleCI Status"></img></a>
+<a href="https://github.styleci.io/repos/15239209"><img src="https://github.styleci.io/repos/15239209/shield" alt="StyleCI Status"></img></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="Software License"></img></a>
 <a href="https://packagist.org/packages/graham-campbell/testbench"><img src="https://img.shields.io/packagist/dt/graham-campbell/testbench?style=flat-square" alt="Packagist Downloads"></img></a>
 <a href="https://github.com/GrahamCampbell/Laravel-TestBench/releases"><img src="https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench?style=flat-square" alt="Latest Version"></img></a>
