@@ -6,11 +6,10 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 ![Banner](https://user-images.githubusercontent.com/2829600/71477507-68a5a600-27e2-11ea-86bf-187e13108910.png)
 
 <p align="center">
-<a href="https://github.styleci.io/repos/15239209"><img src="https://github.styleci.io/repos/15239209/shield" alt="StyleCI Status"></img></a>
-<a href="https://github.com/GrahamCampbell/Laravel-TestBench/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/GrahamCampbell/Laravel-TestBench/Tests?style=flat-square" alt="Build Status"></img></a>
-<a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/GrahamCampbell/Laravel-TestBench?style=flat-square" alt="Coverage Status"></img></a>
-<a href="https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-TestBench"><img src="https://img.shields.io/scrutinizer/g/GrahamCampbell/Laravel-TestBench?style=flat-square" alt="Quality Score"></img></a>
+<a href="https://github.com/GrahamCampbell/Laravel-TestBench/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/GrahamCampbell/Laravel-TestBench/Tests?label=Tests&style=flat-square" alt="Build Status"></img></a>
+<a href="https://github.styleci.io/repos/15239209"><img src="https://github.styleci.io/repos/115239209/shield" alt="StyleCI Status"></img></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="Software License"></img></a>
+<a href="https://packagist.org/packages/graham-campbell/testbench"><img src="https://img.shields.io/packagist/dt/graham-campbell/testbench?style=flat-square" alt="Packagist Downloads"></img></a>
 <a href="https://github.com/GrahamCampbell/Laravel-TestBench/releases"><img src="https://img.shields.io/github/release/GrahamCampbell/Laravel-TestBench?style=flat-square" alt="Latest Version"></img></a>
 </p>
 
@@ -34,7 +33,7 @@ Laravel TestBench requires [PHP](https://php.net) 7.1-7.4, and supports [PHPUnit
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
-$ composer require graham-campbell/testbench --dev
+$ composer require graham-campbell/testbench:^5.4 --dev
 ```
 
 Once installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
