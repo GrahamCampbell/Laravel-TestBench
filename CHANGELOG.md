@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V5.5 (UPCOMING)
+## V5.5 (25/07/2020)
 
 * Provisional PHP 8.0 support
 * Provisional Laravel 8 support
