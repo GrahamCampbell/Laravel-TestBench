@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V5.6 (UPCOMING)
+
+* Support PHPUnit 10 too
+
+
 ## V5.5.1 (25/07/2020)
 
 * Corrected composer.json
