@@ -37,7 +37,7 @@ Laravel TestBench requires [PHP](https://php.net) 7.1-8.0, and supports [PHPUnit
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
-$ composer require graham-campbell/testbench:^5.5 --dev
+$ composer require "graham-campbell/testbench:^5.5" --dev
 ```
 
 Once installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
