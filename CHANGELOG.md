@@ -2,7 +2,12 @@ CHANGE LOG
 ==========
 
 
-## V5.6 (UPCOMING)
+## V5.6.1 (17/10/2021)
+
+* Provisional PHP 8.1 support
+
+
+## V5.6 (29/03/2021)
 
 * Support PHPUnit 10 too
 * Remove app from getServiceProviderClass definition but not calls
