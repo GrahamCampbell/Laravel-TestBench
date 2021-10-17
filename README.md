@@ -6,10 +6,6 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 ![Banner](https://user-images.githubusercontent.com/2829600/71477507-68a5a600-27e2-11ea-86bf-187e13108910.png)
 
 <p align="center">
-<a href="https://xscode.com/grahamcampbell/Laravel-TestBench"><img src="https://xscode.com/assets/promo-banner.svg" alt="Promo Banner"></img></a>
-</p>
-
-<p align="center">
 <a href="https://github.com/GrahamCampbell/Laravel-TestBench/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/GrahamCampbell/Laravel-TestBench/Tests?label=Tests&style=flat-square" alt="Build Status"></img></a>
 <a href="https://github.styleci.io/repos/15239209"><img src="https://github.styleci.io/repos/15239209/shield" alt="StyleCI Status"></img></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="Software License"></img></a>
@@ -20,7 +16,7 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 ## Installation
 
-Laravel TestBench requires [PHP](https://php.net) 7.1-8.0, and supports [PHPUnit](https://phpunit.de/) 6-9. This particular version supports Laravel 5.5-8.
+Laravel TestBench requires [PHP](https://php.net) 7.1-8.1, and supports [PHPUnit](https://phpunit.de/) 6-9. This particular version supports Laravel 5.5-8.
 
 | TestBench | L5.1               | L5.2               | L5.3               | L5.5               | L5.5               | L5.6               | L5.7               | L5.8               | L6                 | L7                 | L8                 |
 |-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
@@ -55,7 +51,7 @@ You may see an example of implementation in pretty much all of my Laravel packag
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an email to Graham Campbell at graham@alt-three.com. All security vulnerabilities will be promptly addressed. You may view our full security policy [here](https://github.com/GrahamCampbell/Laravel-TestBench/security/policy).
+If you discover a security vulnerability within this package, please send an email to security@tidelift.com. All security vulnerabilities will be promptly addressed. You may view our full security policy [here](https://github.com/GrahamCampbell/Laravel-TestBench/security/policy).
 
 
 ## License
