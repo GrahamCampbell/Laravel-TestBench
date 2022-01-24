@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V5.7 (UPCOMING)
+## V5.7 (24/01/2022)
 
 * Support Laravel 9 too
 
