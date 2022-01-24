@@ -1,7 +1,7 @@
 Laravel TestBench
 =================
 
-Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel 5](http://laravel.com). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), [Orchestral Testbench](https://github.com/orchestral/testbench), and the [Laravel Testbench Core](https://github.com/GrahamCampbell/Laravel-TestBench-Core) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [security policy](https://github.com/GrahamCampbell/Laravel-TestBench/security/policy), [license](LICENSE), [code of conduct](.github/CODE_OF_CONDUCT.md), and [contribution guidelines](.github/CONTRIBUTING.md).
+Laravel TestBench was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell), and provides some testing functionality for [Laravel](https://laravel.com/). It utilises [PHPUnit](https://github.com/sebastianbergmann/phpunit), [Mockery](https://github.com/padraic/mockery), [Orchestral Testbench](https://github.com/orchestral/testbench), and the [Laravel Testbench Core](https://github.com/GrahamCampbell/Laravel-TestBench-Core) packages. Feel free to check out the [change log](CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-TestBench/releases), [security policy](https://github.com/GrahamCampbell/Laravel-TestBench/security/policy), [license](LICENSE), [code of conduct](.github/CODE_OF_CONDUCT.md), and [contribution guidelines](.github/CONTRIBUTING.md).
 
 ![Banner](https://user-images.githubusercontent.com/2829600/71477507-68a5a600-27e2-11ea-86bf-187e13108910.png)
 
