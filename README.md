@@ -16,7 +16,7 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 ## Installation
 
-Laravel TestBench requires [PHP](https://php.net) 7.1-8.1, and supports [PHPUnit](https://phpunit.de/) 6-10. This particular version supports Laravel 5.5-9.
+This version requires [PHP](https://www.php.net/) 7.1-8.1 and supports [PHPUnit](https://phpunit.de/) 6-10 and [Laravel](https://laravel.com/) 5.5-9.
 
 | TestBench | L5.1               | L5.2               | L5.3               | L5.5               | L5.5               | L5.6               | L5.7               | L5.8               | L6                 | L7                 | L8                 | L9                 |
 |-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
@@ -30,7 +30,7 @@ Laravel TestBench requires [PHP](https://php.net) 7.1-8.1, and supports [PHPUnit
 | 4.0       | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
 | 5.7       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-To get the latest version, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version, simply require the project using [Composer](https://getcomposer.org/):
 
 ```bash
 $ composer require "graham-campbell/testbench:^5.7" --dev
