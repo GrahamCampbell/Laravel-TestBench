@@ -31,7 +31,10 @@
         }
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "kylekatarnls/update-helper": false
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
