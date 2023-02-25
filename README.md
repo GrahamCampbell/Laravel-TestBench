@@ -16,7 +16,7 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 ## Installation
 
-This version requires [PHP](https://www.php.net/) 7.1-8.1 and supports [PHPUnit](https://phpunit.de/) 6-10 and [Laravel](https://laravel.com/) 5.5-9.
+This version requires [PHP](https://www.php.net/) 7.1-8.1 and supports [PHPUnit](https://phpunit.de/) 6-9 and [Laravel](https://laravel.com/) 5.5-9.
 
 | TestBench | L5.1               | L5.2               | L5.3               | L5.5               | L5.5               | L5.6               | L5.7               | L5.8               | L6                 | L7                 | L8                 | L9                 |
 |-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
@@ -24,11 +24,11 @@ This version requires [PHP](https://www.php.net/) 7.1-8.1 and supports [PHPUnit]
 | 4.0       | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
 | 5.7       | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-| TestBench | PHPUnit 4.8        | PHPUnit 5          | PHPUnit 6          | PHPUnit 7          | PHPUnit 8          | PHPUnit 9          | PHPUnit 10         |
-|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 3.4       | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
-| 4.0       | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| 5.7       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| TestBench | PHPUnit 4.8        | PHPUnit 5          | PHPUnit 6          | PHPUnit 7          | PHPUnit 8          | PHPUnit 9          |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 3.4       | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| 4.0       | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                |
+| 5.7       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org/):
 

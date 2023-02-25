@@ -118,7 +118,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "laravel/framework:8.*" "phpunit/phpunit:^9.3|^10.0" --no-update --no-interaction
+          command: composer require "laravel/framework:8.*" "phpunit/phpunit:^9.3" --no-update --no-interaction
         if: "matrix.laravel == '8'"
 
       - name: Select Laravel 9
@@ -126,7 +126,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "laravel/framework:9.*" "phpunit/phpunit:^9.5|^10.0" --no-update --no-interaction
+          command: composer require "laravel/framework:9.*" "phpunit/phpunit:^9.5" --no-update --no-interaction
         if: "matrix.laravel == '9'"
 
       - name: Install PHP Dependencies
