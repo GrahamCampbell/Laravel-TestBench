@@ -89,7 +89,7 @@ abstract class AbstractPackageTestCase extends TestCase
      *
      * @return string
      */
-    protected function getServiceProviderClass()
+    protected static function getServiceProviderClass()
     {
         // this may be overwritten, and must be overwritten
         // if used with the service provider test case trait
