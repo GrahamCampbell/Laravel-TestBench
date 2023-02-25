@@ -24,11 +24,11 @@ This version requires [PHP](https://www.php.net/) 7.4-8.2 and supports [PHPUnit]
 | 5.7       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
 | 6.0       | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-| TestBench | PHPUnit 4.8        | PHPUnit 5          | PHPUnit 6          | PHPUnit 7          | PHPUnit 8          | PHPUnit 9          | PHPUnit 10          |
-|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 4.0       | :x:                | :x:                | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| 5.7       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
-| 6.0       | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
+| TestBench | PHPUnit 6          | PHPUnit 7          | PHPUnit 8          | PHPUnit 9          | PHPUnit 10         |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 4.0       | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| 5.7       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
+| 6.0       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org/):
 

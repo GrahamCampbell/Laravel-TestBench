@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V6.0 (UPCOMING)
+## V6.0 (25/02/2023)
 
 * Support PHP 7.4-8.2 only
 * Support PHPUnit 9-10 only
