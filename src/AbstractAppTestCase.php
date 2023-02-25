@@ -38,7 +38,7 @@ abstract class AbstractAppTestCase extends TestCase
      *
      * @return string
      */
-    protected function getBasePath()
+    protected static function getBasePath()
     {
         $class = new ReflectionClass($this);
 
@@ -104,7 +104,7 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected function resolveApplication()
     {
-        return new Application($this->getBasePath());
+        return new Application(static::getBasePath());
     }
 
     /**

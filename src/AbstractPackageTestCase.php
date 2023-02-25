@@ -63,23 +63,21 @@ abstract class AbstractPackageTestCase extends TestCase
      */
     protected function getPackageProviders($app)
     {
-        $provider = $this->getServiceProviderClass($app);
+        $provider = static::getServiceProviderClass($app);
 
         if ($provider) {
-            return array_merge($this->getRequiredServiceProviders($app), [$provider]);
+            return array_merge(static::getRequiredServiceProviders(), [$provider]);
         }
 
-        return $this->getRequiredServiceProviders($app);
+        return static::getRequiredServiceProviders($app);
     }
 
     /**
      * Get the required service providers.
      *
-     * @param \Illuminate\Contracts\Foundation\Application $app
-     *
      * @return string[]
      */
-    protected function getRequiredServiceProviders($app)
+    protected static function getRequiredServiceProviders()
     {
         return [];
     }

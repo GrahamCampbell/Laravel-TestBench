@@ -7,6 +7,8 @@ CHANGE LOG
 * Support PHP 7.4-8.2 only
 * Support PHPUnit 9-10 only
 * Support Laravel 8-10 only
+* `AbstractAppTestCase::getBasePath` is now `static`
+* `AbstractPackageTestCase::getRequiredServiceProviders` is now `static` and no longer receives app as param 1
 
 
 ## V5.7.1 (25/02/2023)
