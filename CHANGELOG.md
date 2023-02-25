@@ -2,6 +2,13 @@ CHANGE LOG
 ==========
 
 
+## V6.0 (UPCOMING)
+
+* Support PHP 7.4-8.2 only
+* Support PHPUnit 9-10 only
+* Support Laravel 8-10 only
+
+
 ## V5.7.1 (25/02/2023)
 
 * Removed incorrect PHPUnit 10 support after they made breaking changes before release
