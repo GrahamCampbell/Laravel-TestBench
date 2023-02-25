@@ -29,7 +29,7 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      *
      * @return string
      */
-    protected static function getServiceProviderClass()
+    protected static function getServiceProviderClass(): string
     {
         return ServiceProviderStub::class;
     }
@@ -39,16 +39,16 @@ class ServiceProviderStub extends ServiceProvider
 {
     protected $defer = false;
 
-    public function register()
+    public function register(): void
     {
-        $this->app->singleton('testbench.foostub', function ($app) {
+        $this->app->singleton('testbench.foostub', function ($app): FooStub {
             return new FooStub('baz');
         });
 
         $this->app->alias('testbench.foostub', FooStub::class);
     }
 
-    public function provides()
+    public function provides(): array
     {
         return [
             'testbench.foostub',
@@ -58,7 +58,7 @@ class ServiceProviderStub extends ServiceProvider
 
 class FooFacade extends Facade
 {
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'testbench.foostub';
     }

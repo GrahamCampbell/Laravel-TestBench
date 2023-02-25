@@ -38,7 +38,7 @@ abstract class AbstractAppTestCase extends TestCase
      *
      * @return string
      */
-    protected static function getBasePath()
+    protected static function getBasePath(): string
     {
         $class = new ReflectionClass($this);
 
@@ -76,7 +76,7 @@ abstract class AbstractAppTestCase extends TestCase
      *
      * @return array
      */
-    protected function getApplicationAliases($app)
+    protected function getApplicationAliases($app): array
     {
         return $app->config['app.aliases'];
     }
@@ -88,7 +88,7 @@ abstract class AbstractAppTestCase extends TestCase
      *
      * @return array
      */
-    protected function getApplicationProviders($app)
+    protected function getApplicationProviders($app): array
     {
         if (class_exists(MigrationServiceProvider::class)) {
             return array_merge($app->config['app.providers'], [MigrationServiceProvider::class]);
@@ -102,7 +102,7 @@ abstract class AbstractAppTestCase extends TestCase
      *
      * @return \Illuminate\Contracts\Foundation\Application
      */
-    protected function resolveApplication()
+    protected function resolveApplication(): Application
     {
         return new Application(static::getBasePath());
     }
@@ -112,9 +112,10 @@ abstract class AbstractAppTestCase extends TestCase
      *
      * @return string
      */
-    protected static function getServiceProviderClass()
+    protected static function getServiceProviderClass(): string
     {
         // this may be overwritten, and must be overwritten
         // if used with the service provider test case trait
+        return '';
     }
 }

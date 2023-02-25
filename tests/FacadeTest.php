@@ -29,7 +29,7 @@ class FacadeTest extends AbstractTestCase
      *
      * @return string
      */
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'testbench.foostub';
     }
@@ -39,7 +39,7 @@ class FacadeTest extends AbstractTestCase
      *
      * @return string
      */
-    protected static function getFacadeClass()
+    protected static function getFacadeClass(): string
     {
         return FooFacade::class;
     }
@@ -49,7 +49,7 @@ class FacadeTest extends AbstractTestCase
      *
      * @return string
      */
-    protected static function getFacadeRoot()
+    protected static function getFacadeRoot(): string
     {
         return FooStub::class;
     }

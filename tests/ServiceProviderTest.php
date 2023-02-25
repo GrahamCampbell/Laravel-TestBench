@@ -25,18 +25,18 @@ class ServiceProviderTest extends AbstractTestCase
 {
     use ServiceProviderTrait;
 
-    public function testFooStubIsInjectable()
+    public function testFooStubIsInjectable(): void
     {
         $this->assertIsInjectable(FooStub::class);
     }
 
-    public function testBarStubIsNotInjectable()
+    public function testBarStubIsNotInjectable(): void
     {
         $this->expectException(ExpectationFailedException::class);
         $this->assertIsInjectable(BarStub::class);
     }
 
-    public function testBazStubIsNotInjectable()
+    public function testBazStubIsNotInjectable(): void
     {
         $this->expectException(ExpectationFailedException::class);
         $this->assertIsInjectable(BazStub::class);
@@ -45,7 +45,7 @@ class ServiceProviderTest extends AbstractTestCase
     /**
      * @depends testFooStubIsInjectable
      */
-    public function testFooStub()
+    public function testFooStub(): void
     {
         $result = $this->app->make(FooStub::class)->getBar();
         $this->assertSame('baz', $result);

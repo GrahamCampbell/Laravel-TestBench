@@ -36,7 +36,7 @@ abstract class AbstractPackageTestCase extends TestCase
      *
      * @return void
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         $app->config->set('app.key', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
 
@@ -61,7 +61,7 @@ abstract class AbstractPackageTestCase extends TestCase
      *
      * @return string[]
      */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         $provider = static::getServiceProviderClass($app);
 
@@ -77,7 +77,7 @@ abstract class AbstractPackageTestCase extends TestCase
      *
      * @return string[]
      */
-    protected static function getRequiredServiceProviders()
+    protected static function getRequiredServiceProviders(): array
     {
         return [];
     }
@@ -87,9 +87,10 @@ abstract class AbstractPackageTestCase extends TestCase
      *
      * @return string
      */
-    protected static function getServiceProviderClass()
+    protected static function getServiceProviderClass(): string
     {
         // this may be overwritten, and must be overwritten
         // if used with the service provider test case trait
+        return '';
     }
 }

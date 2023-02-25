@@ -9,6 +9,7 @@ CHANGE LOG
 * Support Laravel 8-10 only
 * `AbstractAppTestCase::getBasePath` is now `static`
 * `AbstractPackageTestCase::getRequiredServiceProviders` is now `static` and no longer receives app as param 1
+* Added return types in all places
 
 
 ## V5.7.1 (25/02/2023)

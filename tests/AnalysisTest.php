@@ -31,7 +31,7 @@ class AnalysisTest extends TestCase
      *
      * @return string[]
      */
-    protected static function getPaths()
+    protected static function getPaths(): array
     {
         return [
             realpath(__DIR__.'/../src'),
@@ -44,7 +44,7 @@ class AnalysisTest extends TestCase
      *
      * @return string[]
      */
-    protected static function getIgnored()
+    protected static function getIgnored(): array
     {
         return [BazStub::class, MigrationServiceProvider::class];
     }
