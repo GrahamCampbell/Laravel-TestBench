@@ -27,19 +27,19 @@ class ServiceProviderTest extends AbstractTestCase
 
     public function testFooStubIsInjectable(): void
     {
-        self::assertIsInjectable(FooStub::class);
+        $this->assertIsInjectable(FooStub::class);
     }
 
     public function testBarStubIsNotInjectable(): void
     {
         $this->expectException(ExpectationFailedException::class);
-        self::assertIsInjectable(BarStub::class);
+        $this->assertIsInjectable(BarStub::class);
     }
 
     public function testBazStubIsNotInjectable(): void
     {
         $this->expectException(ExpectationFailedException::class);
-        self::assertIsInjectable(BazStub::class);
+        $this->assertIsInjectable(BazStub::class);
     }
 
     /**
