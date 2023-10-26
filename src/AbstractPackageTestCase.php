@@ -75,9 +75,11 @@ abstract class AbstractPackageTestCase extends TestCase
     /**
      * Get the required service providers.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string[]
      */
-    protected static function getRequiredServiceProviders(): array
+    protected static function getRequiredServiceProviders($app): array
     {
         return [];
     }
@@ -85,12 +87,14 @@ abstract class AbstractPackageTestCase extends TestCase
     /**
      * Get the service provider class.
      *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return string
      */
-    protected static function getServiceProviderClass(): string
+    protected static function getServiceProviderClass($app): string
     {
-        // this may be overwritten, and must be overwritten
-        // if used with the service provider test case trait
+        // This may be overwritten, and must be overwritten
+        // if used with the service provider test case trait.
         return '';
     }
 }
