@@ -16,24 +16,24 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 ## Installation
 
-This version requires [PHP](https://www.php.net/) 7.4-8.2 and supports [PHPUnit](https://phpunit.de/) 9-10 and [Laravel](https://laravel.com/) 8-10.
+This version requires [PHP](https://www.php.net/) 7.4-8.3 and supports [PHPUnit](https://phpunit.de/) 9-10 and [Laravel](https://laravel.com/) 8-11. PHPUnit 11 is intentionally not supported at this time due to PHPUnit's volatility across minor releases. We would highly recommend sticking with PHPUnit 10 at this time.
 
-| TestBench | L5.5               | L5.6               | L5.7               | L5.8               | L6                 | L7                 | L8                 | L9                 | L10                |
-|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 4.0       | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
-| 5.7       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
-| 6.0       | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| TestBench | L5.5               | L5.6               | L5.7               | L5.8               | L6                 | L7                 | L8                 | L9                 | L10                | L11                |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 4.0       | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                |
+| 5.7       | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| 6.0       | :x:                | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-| TestBench | PHPUnit 6          | PHPUnit 7          | PHPUnit 8          | PHPUnit 9          | PHPUnit 10         |
-|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| 4.0       | :white_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| 5.7       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                |
-| 6.0       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: |
+| TestBench | PHPUnit 6          | PHPUnit 7          | PHPUnit 8          | PHPUnit 9          | PHPUnit 10         | PHPUnit 11         |
+|-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| 4.0       | :white_check_mark: | :x:                | :x:                | :x:                | :x:                | :x:                |
+| 5.7       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| 6.0       | :x:                | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                |
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org/):
 
 ```bash
-$ composer require "graham-campbell/testbench:^6.0" --dev
+$ composer require "graham-campbell/testbench:^6.1" --dev
 ```
 
 Once installed, you can extend or implement the classes in this package, or packages required by this package. The AbstractTestCase class would be a good place to start. There are no service providers to register.
