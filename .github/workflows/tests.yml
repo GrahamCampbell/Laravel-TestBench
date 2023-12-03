@@ -78,7 +78,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "nunomaduro/termwind:2.*@dev" "laravel/tinker:dev-develop" "laravel/framework:11.*@dev" "orchestra/canvas-core:9.*@dev" "orchestra/canvas:9.*@dev" "orchestra/workbench:9.*@dev" "orchestra/testbench-core:9.*@dev" "orchestra/testbench:9.*@dev" "phpunit/phpunit:^10.5" --no-update --no-interaction
+          command: composer require "nunomaduro/termwind:2.*@dev" "psy/psysh:0.12.*@dev" "laravel/tinker:dev-develop" "laravel/framework:11.*@dev" "orchestra/canvas-core:9.*@dev" "orchestra/canvas:9.*@dev" "orchestra/workbench:9.*@dev" "orchestra/testbench-core:9.*@dev" "orchestra/testbench:9.*@dev" "phpunit/phpunit:^10.5" --no-update --no-interaction
         if: "matrix.laravel == '11'"
 
       - name: Install PHP Dependencies
