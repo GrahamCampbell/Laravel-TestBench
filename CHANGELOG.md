@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V6.1 (UPCOMING)
+## V6.1 (03/12/2023)
 
 * Add provisional PHP 8.3 support
 * Add provisional Laravel 11 support
