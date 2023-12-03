@@ -78,7 +78,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "laravel/framework:11.*@dev" "orchestra/testbench-core:9.*@dev" "orchestra/testbench:9.*@dev" "phpunit/phpunit:^10.5" --no-update --no-interaction
+          command: composer require "nunomaduro/termwind:2.*@dev" "laravel/framework:11.*@dev" "orchestra/testbench-core:9.*@dev" "orchestra/testbench:9.*@dev" "phpunit/phpunit:^10.5" --no-update --no-interaction
         if: "matrix.laravel == '11'"
 
       - name: Install PHP Dependencies
