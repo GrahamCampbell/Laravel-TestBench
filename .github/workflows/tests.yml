@@ -34,8 +34,6 @@ jobs:
             laravel: '12'
           - php: '8.2'
             laravel: '8'
-          - php: '8.2'
-            laravel: '12'
           - php: '8.3'
             laravel: '8'
           - php: '8.3'
@@ -98,7 +96,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:12.*@dev" "orchestra/testbench:10.*@dev" "orchestra/testbench-core:10.*@dev" "phpunit/phpunit:^11.0" --no-update --no-interaction
+          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:12.*@dev" "orchestra/testbench:10.*@dev" "orchestra/testbench-core:10.*@dev" "orchestra/workbench:10.*@dev" "phpunit/phpunit:^11.0" --no-update --no-interaction
         if: "matrix.laravel == '12'"
 
       - name: Install PHP Dependencies
