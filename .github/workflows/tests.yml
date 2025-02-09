@@ -7,12 +7,12 @@ on:
 jobs:
   tests:
     name: PHP ${{ matrix.php }}; Laravel ${{ matrix.laravel }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     strategy:
       matrix:
         php: ['7.4', '8.0', '8.1', '8.2', '8.3', '8.4']
-        laravel: ['8', '9', '10', '11']
+        laravel: ['8', '9', '10', '11', '12']
         exclude:
           - php: '7.4'
             laravel: '9'
@@ -20,14 +20,22 @@ jobs:
             laravel: '10'
           - php: '7.4'
             laravel: '11'
+          - php: '7.4'
+            laravel: '12'
           - php: '8.0'
             laravel: '10'
           - php: '8.0'
             laravel: '11'
+          - php: '8.0'
+            laravel: '12'
           - php: '8.1'
             laravel: '11'
+          - php: '8.1'
+            laravel: '12'
           - php: '8.2'
             laravel: '8'
+          - php: '8.2'
+            laravel: '12'
           - php: '8.3'
             laravel: '8'
           - php: '8.3'
@@ -58,7 +66,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "laravel/framework:8.*" "phpunit/phpunit:^9.5" --no-update --no-interaction
+          command: composer require "graham-campbell/analyzer:^4.2" "laravel/framework:8.*" "phpunit/phpunit:^9.5" --no-update --no-interaction
         if: "matrix.laravel == '8'"
 
       - name: Select Laravel 9
@@ -66,7 +74,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "laravel/framework:9.*" "phpunit/phpunit:^9.6" --no-update --no-interaction
+          command: composer require "graham-campbell/analyzer:^4.2" "laravel/framework:9.*" "phpunit/phpunit:^9.6" --no-update --no-interaction
         if: "matrix.laravel == '9'"
 
       - name: Select Laravel 10
@@ -74,7 +82,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "laravel/framework:10.*" "phpunit/phpunit:^10.1" --no-update --no-interaction
+          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:10.*" "phpunit/phpunit:^10.1" "graham-campbell/analyzer:^4.2" --no-update --no-interaction
         if: "matrix.laravel == '10'"
 
       - name: Select Laravel 11
@@ -82,8 +90,16 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "laravel/framework:11.*" "phpunit/phpunit:^10.5" --no-update --no-interaction
+          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:11.*" "phpunit/phpunit:^10.5" --no-update --no-interaction
         if: "matrix.laravel == '11'"
+
+      - name: Select Laravel 12
+        uses: nick-invision/retry@v3
+        with:
+          timeout_minutes: 5
+          max_attempts: 5
+          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:12.*@dev" "orchestra/testbench:10.*@dev" "phpunit/phpunit:^11.0" --no-update --no-interaction
+        if: "matrix.laravel == '12'"
 
       - name: Install PHP Dependencies
         uses: nick-invision/retry@v3
