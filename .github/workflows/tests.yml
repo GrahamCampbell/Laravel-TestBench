@@ -80,7 +80,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:10.*" "phpunit/phpunit:^10.1" "graham-campbell/analyzer:^4.2" --no-update --no-interaction
+          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:10.*" "phpunit/phpunit:^10.1" --no-update --no-interaction
         if: "matrix.laravel == '10'"
 
       - name: Select Laravel 11
