@@ -2,7 +2,7 @@ CHANGE LOG
 ==========
 
 
-## V6.2 (XX/02/2025)
+## V6.2 (09/02/2025)
 
 * Support Laravel 12 and PHPUnit 11
 

@@ -16,7 +16,7 @@ Laravel TestBench was created by, and is maintained by [Graham Campbell](https:/
 
 ## Installation
 
-This version requires [PHP](https://www.php.net/) 7.4-8.4 and supports [PHPUnit](https://phpunit.de/) 9-12 and [Laravel](https://laravel.com/) 8-11. PHPUnit 12 is not supported due to volatility across minor releases. We would highly recommend sticking with PHPUnit 11 at this time.
+This version requires [PHP](https://www.php.net/) 7.4-8.4 and supports [PHPUnit](https://phpunit.de/) 9-11 and [Laravel](https://laravel.com/) 8-12. PHPUnit 12 is not supported due to volatility across minor releases. We would highly recommend sticking with PHPUnit 11 at this time.
 
 | TestBench | L5.5               | L5.6               | L5.7               | L5.8               | L6                 | L7                 | L8                 | L9                 | L10                | L11                | L12                |
 |-----------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
