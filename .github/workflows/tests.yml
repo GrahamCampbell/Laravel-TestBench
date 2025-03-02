@@ -64,7 +64,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "graham-campbell/analyzer:^4.2" "laravel/framework:8.*" "phpunit/phpunit:^9.5" --no-update --no-interaction
+          command: composer require "laravel/framework:8.*" "phpunit/phpunit:^9.5" "graham-campbell/analyzer:^4.2" --no-update --no-interaction
         if: "matrix.laravel == '8'"
 
       - name: Select Laravel 9
@@ -72,7 +72,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "graham-campbell/analyzer:^4.2" "laravel/framework:9.*" "phpunit/phpunit:^9.6" --no-update --no-interaction
+          command: composer require "laravel/framework:9.*" "phpunit/phpunit:^9.6" "graham-campbell/analyzer:^4.2" --no-update --no-interaction
         if: "matrix.laravel == '9'"
 
       - name: Select Laravel 10
@@ -80,7 +80,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:10.*" "phpunit/phpunit:^10.1" --no-update --no-interaction
+          command: composer require "laravel/framework:10.*" "phpunit/phpunit:^10.1" "graham-campbell/analyzer:^5.0" --no-update --no-interaction
         if: "matrix.laravel == '10'"
 
       - name: Select Laravel 11
@@ -88,7 +88,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:11.*" "phpunit/phpunit:^10.5" --no-update --no-interaction
+          command: composer require "laravel/framework:11.*" "phpunit/phpunit:^10.5" "graham-campbell/analyzer:^5.0" --no-update --no-interaction
         if: "matrix.laravel == '11'"
 
       - name: Select Laravel 12
@@ -96,7 +96,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer require "graham-campbell/analyzer:^5.0" "laravel/framework:12.*@dev" "orchestra/canvas:10.*@dev" "orchestra/canvas-core:10.*@dev" "orchestra/testbench:10.*@dev" "orchestra/testbench-core:10.*@dev" "orchestra/workbench:10.*@dev" "phpunit/phpunit:^11.0" --no-update --no-interaction
+          command: composer require "laravel/framework:12.*" "phpunit/phpunit:^11.0" "graham-campbell/analyzer:^5.0" --no-update --no-interaction
         if: "matrix.laravel == '12'"
 
       - name: Install PHP Dependencies
