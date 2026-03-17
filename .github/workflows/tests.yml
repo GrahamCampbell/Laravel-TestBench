@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         php: ['7.4', '8.0', '8.1', '8.2', '8.3', '8.4']
-        laravel: ['8', '9', '10', '11', '12']
+        laravel: ['8', '9', '10', '11', '12', '13']
         exclude:
           - php: '7.4'
             laravel: '9'
@@ -22,18 +22,26 @@ jobs:
             laravel: '11'
           - php: '7.4'
             laravel: '12'
+          - php: '7.4'
+            laravel: '13'
           - php: '8.0'
             laravel: '10'
           - php: '8.0'
             laravel: '11'
           - php: '8.0'
             laravel: '12'
+          - php: '8.0'
+            laravel: '13'
           - php: '8.1'
             laravel: '11'
           - php: '8.1'
             laravel: '12'
+          - php: '8.1'
+            laravel: '13'
           - php: '8.2'
             laravel: '8'
+          - php: '8.2'
+            laravel: '13'
           - php: '8.3'
             laravel: '8'
           - php: '8.3'
@@ -98,6 +106,14 @@ jobs:
           max_attempts: 5
           command: composer require "laravel/framework:12.*" "phpunit/phpunit:^11.0" "graham-campbell/analyzer:^5.0" --no-update --no-interaction
         if: "matrix.laravel == '12'"
+
+      - name: Select Laravel 13
+        uses: nick-invision/retry@v3
+        with:
+          timeout_minutes: 5
+          max_attempts: 5
+          command: composer require "laravel/framework:13.*@dev" "orchestra/canvas:11.*@dev" "orchestra/canvas-core:11.*@dev" "orchestra/testbench:11.*@dev" "orchestra/testbench-core:11.*@dev" "orchestra/workbench:11.*@dev" "phpunit/phpunit:^11.0" "graham-campbell/analyzer:^5.0" --no-update --no-interaction
+        if: "matrix.laravel == '13'"
 
       - name: Install PHP Dependencies
         uses: nick-invision/retry@v3
