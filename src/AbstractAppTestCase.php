@@ -40,7 +40,7 @@ abstract class AbstractAppTestCase extends TestCase
      */
     protected static function getBasePath(): string
     {
-        $class = new ReflectionClass($this);
+        $class = new ReflectionClass(static::class);
 
         $parents = [];
 
@@ -65,8 +65,18 @@ abstract class AbstractAppTestCase extends TestCase
         // get the filepath of the selected class
         $path = $selected->getFileName();
 
+        if ($path === false) {
+            throw new RuntimeException('The base path could not be automatically determined.');
+        }
+
+        $basePath = realpath(dirname($path).'/../');
+
         // return the filepath one up from the folder the selected class is saved in
-        return realpath(dirname($path).'/../');
+        if ($basePath === false) {
+            throw new RuntimeException('The base path could not be automatically determined.');
+        }
+
+        return $basePath;
     }
 
     /**

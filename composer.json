@@ -12,13 +12,13 @@
     ],
     "require": {
         "php": "^7.4.15 || ^8.0.2",
-        "graham-campbell/testbench-core": "^4.2",
-        "orchestra/testbench": "^6.38 || ^7.35 || ^8.15 || ^9.0 || ^10.0"
+        "graham-campbell/testbench-core": "^4.3",
+        "orchestra/testbench": "^6.38 || ^7.35 || ^8.15 || ^9.0 || ^10.0 || ^11.0"
     },
     "require-dev": {
-        "graham-campbell/analyzer": "^4.2 || ^5.0",
-        "mockery/mockery": "^1.6.6",
-        "phpunit/phpunit": "^9.5 || ^10.1 || ^11.0"
+        "graham-campbell/analyzer": "^4.2.1 || ^5.1",
+        "mockery/mockery": "^1.6.12",
+        "phpunit/phpunit": "^9.6.34 || ^10.5.63 || ^11.5.55 || ^12.5.14"
     },
     "conflict": {
         "kylekatarnls/update-helper": "*"

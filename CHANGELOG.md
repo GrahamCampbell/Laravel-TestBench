@@ -2,6 +2,11 @@ CHANGE LOG
 ==========
 
 
+## V6.3 (UPCOMING)
+
+* Support PHP 8.5, Laravel 13 and PHPUnit 12
+
+
 ## V6.2 (09/02/2025)
 
 * Support Laravel 12 and PHPUnit 11
